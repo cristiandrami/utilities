@@ -11,7 +11,7 @@ chmod +x nmap_ips.sh
 After this you can use them.
 **Remember that nmap_ips.sh needs file from which read the ips to scan**
 
-## Linux Usage:
+How to run it:
 ```
 ./ip_discover.sh > ip.txt
 ``` 

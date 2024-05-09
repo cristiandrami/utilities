@@ -1,0 +1,8 @@
+[tls-version] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] infoscreen.it.tuwien.ac.at:443 ["[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] infoscreen.it.tuwien.ac.at:443 ["[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"]
+[tls-version] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["tls11"]
+[tls-version] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["tls12"]
+[tls-version] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["tls13"]
+[ssl-issuer] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] infoscreen.it.tuwien.ac.at:443 ["infoscreen.it.tuwien.ac.at","www.infoscreen.it.tuwien.ac.at"]

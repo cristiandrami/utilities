@@ -1,0 +1,9 @@
+[gitlab-detect] [http] [info] https://git.tuwien.ac.at/users/sign_in
+[form-detection] [http] [info] https://gitlab.tuwien.ac.at/users/sign_in?auto_sign_in=false
+[robots-txt] [http] [info] https://git.tuwien.ac.at/robots.txt
+[ssh-auth-methods] [javascript] [info] git.tuwien.ac.at:22 ["["publickey","keyboard-interactive"]"]
+[ssh-server-enumeration] [javascript] [info] git.tuwien.ac.at:22 ["SSH-2.0-OpenSSH_8.4p1 Debian-5+deb11u3"]
+[ssh-sha1-hmac-algo] [javascript] [info] git.tuwien.ac.at:22
+[openssh-detect] [tcp] [info] git.tuwien.ac.at:22 ["SSH-2.0-OpenSSH_8.4p1 Debian-5+deb11u3"]
+[ssl-issuer] [ssl] [info] git.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] git.tuwien.ac.at:443 ["gitlab.it.tuwien.ac.at","minio.it.tuwien.ac.at","registry.it.tuwien.ac.at","gitlab.tuwien.ac.at","git.tuwien.ac.at"]

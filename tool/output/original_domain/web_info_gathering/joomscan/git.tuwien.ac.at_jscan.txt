@@ -1,0 +1,112 @@
+[H[J
+    ____  _____  _____  __  __  ___   ___    __    _  _ 
+   (_  _)(  _  )(  _  )(  \/  )/ __) / __)  /__\  ( \( )
+  .-_)(   )(_)(  )(_)(  )    ( \__ \( (__  /(__)\  )  ( 
+  \____) (_____)(_____)(_/\/\_)(___/ \___)(__)(__)(_)\_)
+			(1337.today)
+   
+    --=[OWASP JoomScan
+    +---++---==[Version : 0.0.7
+    +---++---==[Update Date : [2018/09/23]
+    +---++---==[Authors : Mohammad Reza Espargham , Ali Razmjoo
+    --=[Code name : Self Challenge
+    @OWASP_JoomScan , @rezesp , @Ali_Razmjo0 , @OWASP
+
+Processing https://git.tuwien.ac.at/ ...
+
+
+
+[+] FireWall Detector
+[++] Firewall not detected
+
+[+] Detecting Joomla Version
+[++] ver 404
+
+
+[+] Core Joomla Vulnerability
+[++] Target Joomla core is not vulnerable
+
+[+] Checking apache info/status files
+[++] Readable info/status files are not found
+
+[+] admin finder
+[++] Admin page : https://git.tuwien.ac.at/administrator/
+
+[+] Checking robots.txt existing
+[++] robots.txt is found
+path : https://git.tuwien.ac.at/robots.txt 
+
+Interesting path found from robots.txt
+https://git.tuwien.ac.at/
+https://git.tuwien.ac.at/autocomplete/users
+https://git.tuwien.ac.at/autocomplete/projects
+https://git.tuwien.ac.at/search
+https://git.tuwien.ac.at/admin
+https://git.tuwien.ac.at/profile
+https://git.tuwien.ac.at/dashboard
+https://git.tuwien.ac.at/users
+https://git.tuwien.ac.at/api/v*
+https://git.tuwien.ac.at/help
+https://git.tuwien.ac.at/s/
+https://git.tuwien.ac.at/-/profile
+https://git.tuwien.ac.at/-/ide/
+https://git.tuwien.ac.at/-/experiment
+https://git.tuwien.ac.at/users/sign_in
+https://git.tuwien.ac.at/users/sign_up
+https://git.tuwien.ac.at/users/*/snippets
+https://git.tuwien.ac.at/*/new
+https://git.tuwien.ac.at/*/edit
+https://git.tuwien.ac.at/*/raw
+https://git.tuwien.ac.at/*/realtime_changes
+https://git.tuwien.ac.at/groups/*/analytics
+https://git.tuwien.ac.at/groups/*/contribution_analytics
+https://git.tuwien.ac.at/groups/*/group_members
+https://git.tuwien.ac.at/groups/*/-/saml/sso
+https://git.tuwien.ac.at/*/*.git$
+https://git.tuwien.ac.at/*/archive/
+https://git.tuwien.ac.at/*/repository/archive*
+https://git.tuwien.ac.at/*/activity
+https://git.tuwien.ac.at/*/blame
+https://git.tuwien.ac.at/*/commits
+https://git.tuwien.ac.at/*/commit
+https://git.tuwien.ac.at/*/commit/*.patch
+https://git.tuwien.ac.at/*/commit/*.diff
+https://git.tuwien.ac.at/*/compare
+https://git.tuwien.ac.at/*/network
+https://git.tuwien.ac.at/*/graphs
+https://git.tuwien.ac.at/*/merge_requests/*.patch
+https://git.tuwien.ac.at/*/merge_requests/*.diff
+https://git.tuwien.ac.at/*/merge_requests/*/diffs
+https://git.tuwien.ac.at/*/deploy_keys
+https://git.tuwien.ac.at/*/hooks
+https://git.tuwien.ac.at/*/services
+https://git.tuwien.ac.at/*/protected_branches
+https://git.tuwien.ac.at/*/uploads/
+https://git.tuwien.ac.at/*/project_members
+https://git.tuwien.ac.at/*/settings
+https://git.tuwien.ac.at/*/-/import
+https://git.tuwien.ac.at/*/-/environments
+https://git.tuwien.ac.at/*/-/jobs
+https://git.tuwien.ac.at/*/-/requirements_management
+https://git.tuwien.ac.at/*/-/pipelines
+https://git.tuwien.ac.at/*/-/pipeline_schedules
+https://git.tuwien.ac.at/*/-/dependencies
+https://git.tuwien.ac.at/*/-/licenses
+https://git.tuwien.ac.at/*/-/metrics
+https://git.tuwien.ac.at/*/-/incidents
+https://git.tuwien.ac.at/*/-/value_stream_analytics
+https://git.tuwien.ac.at/*/-/analytics
+https://git.tuwien.ac.at/*/insights
+
+
+[+] Finding common backup files name
+[++] Backup files are not found
+
+[+] Finding common log files name
+[++] error log is not found
+
+[+] Checking sensitive config.php.x file
+[++] Readable config files are not found
+
+
+Your Report : reports/git.tuwien.ac.at/

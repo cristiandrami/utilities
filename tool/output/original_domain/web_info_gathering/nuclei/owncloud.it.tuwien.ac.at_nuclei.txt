@@ -1,0 +1,15 @@
+[http-trace:trace-request] [http] [info] https://owncloud.it.tuwien.ac.at
+[tech-detect:php] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[tech-detect:php] [http] [info] https://owncloud.it.tuwien.ac.at
+[owncloud-status-page] [http] [info] https://owncloud.it.tuwien.ac.at/status.php ["10.14.0.3"]
+[form-detection] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[http-missing-security-headers:permissions-policy] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[http-missing-security-headers:clear-site-data] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://owncloud.it.tuwien.ac.at/index.php/login
+[readme-md] [http] [info] https://owncloud.it.tuwien.ac.at/README.md
+[robots-txt-endpoint] [http] [info] https://owncloud.it.tuwien.ac.at/robots.txt
+[waf-detect:apachegeneric] [http] [info] https://owncloud.it.tuwien.ac.at
+[ssl-issuer] [ssl] [info] owncloud.it.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] owncloud.it.tuwien.ac.at:443 ["owncloud.it.tuwien.ac.at","tuprocloud.tuwien.ac.at","owncloud.tuwien.ac.at"]

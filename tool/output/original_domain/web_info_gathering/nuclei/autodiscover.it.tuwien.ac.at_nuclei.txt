@@ -1,0 +1,23 @@
+[weak-cipher-suites:tls-1.0] [ssl] [low] autodiscover.it.tuwien.ac.at:443 ["[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["tls10"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] autodiscover.it.tuwien.ac.at:443 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["tls11"]
+[tls-version] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["tls12"]
+[tls-version] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["tls13"]
+[options-method] [http] [info] https://autodiscover.it.tuwien.ac.at ["POST,OPTIONS,HEAD,GET"]
+[apache-detect] [http] [info] https://autodiscover.it.tuwien.ac.at ["Apache/2.4.38 (Debian)"]
+[switch-protocol] [http] [info] https://autodiscover.it.tuwien.ac.at ["h2,h2c"]
+[http-missing-security-headers:permissions-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:x-frame-options] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:clear-site-data] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:content-security-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:x-content-type-options] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:referrer-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://autodiscover.it.tuwien.ac.at
+[http-missing-security-headers:strict-transport-security] [http] [info] https://autodiscover.it.tuwien.ac.at
+[waf-detect:apachegeneric] [http] [info] https://autodiscover.it.tuwien.ac.at
+[ssl-issuer] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["Let's Encrypt"]
+[ssl-dns-names] [ssl] [info] autodiscover.it.tuwien.ac.at:443 ["autoconfig.it.tuwien.ac.at","autoconfig.zid.tuwien.ac.at","autodiscover.it.tuwien.ac.at","autodiscover.zid.tuwien.ac.at"]

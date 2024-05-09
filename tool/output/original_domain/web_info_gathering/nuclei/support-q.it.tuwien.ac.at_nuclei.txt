@@ -1,0 +1,7 @@
+[tls-version] [ssl] [info] support-q.it.tuwien.ac.at:443 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] support-q.it.tuwien.ac.at:443 ["[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] support-q.it.tuwien.ac.at:443 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] support-q.it.tuwien.ac.at:443 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] support-q.it.tuwien.ac.at:443 ["tls12"]
+[weak-cipher-suites:tls-1.2] [ssl] [low] support-q.it.tuwien.ac.at:443 ["[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]"]
+[tls-version] [ssl] [info] support-q.it.tuwien.ac.at:443 ["tls13"]

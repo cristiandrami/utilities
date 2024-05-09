@@ -1,0 +1,43 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-07 16:52 CEST
+Nmap scan report for damap.it.tuwien.ac.at (128.131.20.173)
+Host is up (0.015s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE            VERSION
+80/tcp   open  http               nginx 1.25.4
+443/tcp  open  ssl/http           nginx 1.25.4
+8087/tcp open  ssl/simplifymedia?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8087-TCP:V=7.80%T=SSL%I=7%D=5/7%Time=663A4057%P=x86_64-pc-linux-gnu
+SF:%r(GenericLines,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Lengt
+SF:h:\x200\r\nConnection:\x20close\r\n\r\n")%r(GetRequest,4FD,"HTTP/1\.1\x
+SF:20200\x20OK\r\nConnection:\x20close\r\nLast-Modified:\x20Tue,\x2025\x20
+SF:Jan\x202022\x2009:09:53\x20GMT\r\nContent-Length:\x201087\r\nContent-Ty
+SF:pe:\x20text/html\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Tue,\x2007\x20M
+SF:ay\x202024\x2014:53:11\x20GMT\r\n\r\n<!--\n\x20\x20~\x20Copyright\x2020
+SF:16\x20Red\x20Hat,\x20Inc\.\x20and/or\x20its\x20affiliates\n\x20\x20~\x2
+SF:0and\x20other\x20contributors\x20as\x20indicated\x20by\x20the\x20@autho
+SF:r\x20tags\.\n\x20\x20~\n\x20\x20~\x20Licensed\x20under\x20the\x20Apache
+SF:\x20License,\x20Version\x202\.0\x20\(the\x20\"License\"\);\n\x20\x20~\x
+SF:20you\x20may\x20not\x20use\x20this\x20file\x20except\x20in\x20complianc
+SF:e\x20with\x20the\x20License\.\n\x20\x20~\x20You\x20may\x20obtain\x20a\x
+SF:20copy\x20of\x20the\x20License\x20at\n\x20\x20~\n\x20\x20~\x20http://ww
+SF:w\.apache\.org/licenses/LICENSE-2\.0\n\x20\x20~\n\x20\x20~\x20Unless\x2
+SF:0required\x20by\x20applicable\x20law\x20or\x20agreed\x20to\x20in\x20wri
+SF:ting,\x20software\n\x20\x20~\x20distributed\x20under\x20the\x20License\
+SF:x20is\x20distributed\x20on\x20an\x20\"AS\x20IS\"\x20BASIS,\n\x20\x20~\x
+SF:20WITHOUT\x20WARRANTIES\x20OR\x20CONDITIONS\x20OF\x20ANY\x20KIND,\x20ei
+SF:ther\x20express\x20or\x20implied\.\n\x20\x20~\x20See\x20the\x20License\
+SF:x20for\x20the\x20specific\x20language\x20governing\x20permissions\x20an
+SF:d\n\x20\x20~\x20limitations\x20under\x20the\x20License\.\n\x20\x20-->\n
+SF:<!DOCTYPE\x20html\x20PU")%r(HTTPOptions,F3,"HTTP/1\.1\x20405\x20Method\
+SF:x20Not\x20Allowed\r\nAllow:\x20GET,\x20HEAD,\x20POST\r\nConnection:\x20
+SF:close\r\nContent-Length:\x2083\r\nContent-Type:\x20text/html\r\nDate:\x
+SF:20Tue,\x2007\x20May\x202024\x2014:53:11\x20GMT\r\n\r\n<html><head><titl
+SF:e>Error</title></head><body>405\x20-\x20Method\x20Not\x20Allowed</body>
+SF:</html>")%r(RTSPRequest,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConte
+SF:nt-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(Help,42,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConnection:\x20clos
+SF:e\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 91.73 seconds

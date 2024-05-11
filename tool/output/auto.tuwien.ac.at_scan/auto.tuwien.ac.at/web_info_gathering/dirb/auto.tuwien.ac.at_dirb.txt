@@ -1,0 +1,24 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: /home/cristian/Scrivania/utilities/tool/output/auto.tuwien.ac.at_scan/auto.tuwien.ac.at/web_info_gathering/dirb/auto.tuwien.ac.at_dirb.txt
+START_TIME: Sat May 11 12:08:13 2024
+URL_BASE: https://auto.tuwien.ac.at/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://auto.tuwien.ac.at/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: OPERATION TIMEOUT)
+
+-----------------
+END_TIME: Sat May 11 12:10:43 2024
+DOWNLOADED: 0 - FOUND: 0

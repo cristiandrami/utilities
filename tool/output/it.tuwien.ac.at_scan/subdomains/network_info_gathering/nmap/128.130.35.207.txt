@@ -1,0 +1,81 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 16:00 CEST
+Nmap scan report for owncloud.tuwien.ac.at (128.130.35.207)
+Host is up (0.0079s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http
+443/tcp open  ssl/https
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.80%I=7%D=5/11%Time=663F7A1E%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-length:\
+SF:x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r(HTTP
+SF:Options,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-length:
+SF:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r(RTS
+SF:PRequest,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x209
+SF:0\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type
+SF::\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\
+SF:x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(
+SF:X11Probe,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x209
+SF:0\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type
+SF::\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\
+SF:x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(
+SF:RPCCheck,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x209
+SF:0\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type
+SF::\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\
+SF:x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(
+SF:DNSVersionBindReqTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-
+SF:length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\n
+SF:Content-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request
+SF:</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></
+SF:html>\n")%r(DNSStatusRequestTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\
+SF:r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x
+SF:20close\r\nContent-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad
+SF:\x20request</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.
+SF:\n</body></html>\n")%r(Help,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nC
+SF:ontent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20cl
+SF:ose\r\nContent-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20
+SF:request</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</
+SF:body></html>\n")%r(SSLSessionReq,CF,"HTTP/1\.1\x20400\x20Bad\x20request
+SF:\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\
+SF:x20close\r\nContent-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Ba
+SF:d\x20request</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\
+SF:.\n</body></html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.80%T=SSL%I=7%D=5/11%Time=663F7A24%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,49C,"HTTP/1\.1\x20302\x20Found\r\ndate:\x20Sat,\x2011\x20
+SF:May\x202024\x2014:01:08\x20GMT\r\nexpires:\x20Thu,\x2019\x20Nov\x201981
+SF:\x2008:52:00\x20GMT\r\ncache-control:\x20no-store,\x20no-cache,\x20must
+SF:-revalidate\r\npragma:\x20no-cache\r\ncontent-security-policy:\x20defau
+SF:lt-src\x20'self';\x20script-src\x20'self'\x20'unsafe-eval';\x20style-sr
+SF:c\x20'self'\x20'unsafe-inline';\x20frame-src\x20\*;\x20img-src\x20\*\x2
+SF:0data:\x20blob:;\x20font-src\x20'self'\x20data:;\x20media-src\x20\*;\x2
+SF:0connect-src\x20\*\r\nset-cookie:\x20tu_oc=vp9v0ro35fb5bfojpag2gnus75;\
+SF:x20path=/;\x20secure;\x20HttpOnly;\x20Secure\r\nset-cookie:\x20oc_sessi
+SF:onPassphrase=IIYmj71MGKPeFpuuINS3TV5JejY63R3%2Bo0zamfK%2FE5elp1%2BrLtbi
+SF:5q6tEPKDEmlPiDk7idP2fkFrtV8cFev6o3IefzutdSS%2FkurkM7q40h7p8H27g6RyOoVh6
+SF:NRdFF9U;\x20expires=Sat,\x2011-May-2024\x2014:21:08\x20GMT;\x20Max-Age=
+SF:1200;\x20path=/;\x20secure;\x20HttpOnly;\x20SameSite=Strict;\x20Secure\
+SF:r\nx-content-type-options:\x20nosniff\r\nx-xss-protection:\x200\r\nx-ro
+SF:bots-tag:\x20none\r\nx-frame-options:\x20SAMEORIGIN\r\nx-download-optio
+SF:ns:\x20noopen\r\nx-permitted-cross-domain-policies:\x20none\r\nlocatio"
+SF:)%r(HTTPOptions,49C,"HTTP/1\.1\x20302\x20Found\r\ndate:\x20Sat,\x2011\x
+SF:20May\x202024\x2014:01:08\x20GMT\r\nexpires:\x20Thu,\x2019\x20Nov\x2019
+SF:81\x2008:52:00\x20GMT\r\ncache-control:\x20no-store,\x20no-cache,\x20mu
+SF:st-revalidate\r\npragma:\x20no-cache\r\ncontent-security-policy:\x20def
+SF:ault-src\x20'self';\x20script-src\x20'self'\x20'unsafe-eval';\x20style-
+SF:src\x20'self'\x20'unsafe-inline';\x20frame-src\x20\*;\x20img-src\x20\*\
+SF:x20data:\x20blob:;\x20font-src\x20'self'\x20data:;\x20media-src\x20\*;\
+SF:x20connect-src\x20\*\r\nset-cookie:\x20tu_oc=i19s3u1rdrak0oi6ne4lkc2cq5
+SF:;\x20path=/;\x20secure;\x20HttpOnly;\x20Secure\r\nset-cookie:\x20oc_ses
+SF:sionPassphrase=mrWvvE%2FVOdLcNrPFcWzyvcbFB3vIAMihzcMRRLP9tA5ywIdJ%2BnGl
+SF:fE7yxGJ4%2BIxoFgoorJoZkZtfY9uE3MAnFSqJ%2BzF6Jl2PqdrwisVoi2fdQf6z9dM4U3J
+SF:QlHIbNNaG;\x20expires=Sat,\x2011-May-2024\x2014:21:08\x20GMT;\x20Max-Ag
+SF:e=1200;\x20path=/;\x20secure;\x20HttpOnly;\x20SameSite=Strict;\x20Secur
+SF:e\r\nx-content-type-options:\x20nosniff\r\nx-xss-protection:\x200\r\nx-
+SF:robots-tag:\x20none\r\nx-frame-options:\x20SAMEORIGIN\r\nx-download-opt
+SF:ions:\x20noopen\r\nx-permitted-cross-domain-policies:\x20none\r\nlocati
+SF:o");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 26.04 seconds

@@ -1,21 +1,2 @@
 DOMAIN                                                                                              IP ADDRESS
-jupiter.alab.auto.tuwien.ac.at                                                                      128.130.56.45
-bim4bemsrest.fortnite.auto.tuwien.ac.at                                                             128.130.60.28
-chronograf.fortnite.auto.tuwien.ac.at                                                               128.130.60.28
-dataanalysis.fortnite.auto.tuwien.ac.at                                                             128.130.60.28
-fireweb.fortnite.auto.tuwien.ac.at                                                                  128.130.60.28
-influxdb.fortnite.auto.tuwien.ac.at                                                                 128.130.60.28
-jena.fortnite.auto.tuwien.ac.at                                                                     128.130.60.28
-jenabackend.fortnite.auto.tuwien.ac.at                                                              128.130.60.28
-keycloak.fortnite.auto.tuwien.ac.at                                                                 128.130.60.28
-mq.fortnite.auto.tuwien.ac.at                                                                       128.130.60.28
-visualization.fortnite.auto.tuwien.ac.at                                                            128.130.60.28
-mail.auto.tuwien.ac.at                                                                              128.130.60.3
-wiki.auto.tuwien.ac.at                                                                              128.130.60.5
-sleipnir.auto.tuwien.ac.at                                                                          128.130.60.68
-monitor.auto.tuwien.ac.at                                                                           128.130.62.17
 auto.tuwien.ac.at                                                                                   128.130.62.34
-www.auto.tuwien.ac.at                                                                               128.130.62.34
-git.auto.tuwien.ac.at                                                                               128.130.62.35
-gitlab.auto.tuwien.ac.at                                                                            128.130.62.35
-pages.auto.tuwien.ac.at                                                                             No IP, maybe it is down or unreachable

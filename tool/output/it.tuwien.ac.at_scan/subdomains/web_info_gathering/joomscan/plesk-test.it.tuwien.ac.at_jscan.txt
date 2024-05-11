@@ -12,7 +12,7 @@
     --=[Code name : Self Challenge
     @OWASP_JoomScan , @rezesp , @Ali_Razmjo0 , @OWASP
 
-Processing https://auto.tuwien.ac.at/ ...
+Processing https://plesk-test.it.tuwien.ac.at/ ...
 
 
 
@@ -20,12 +20,5 @@ Processing https://auto.tuwien.ac.at/ ...
 [++] Firewall not detected
 
 [+] Detecting Joomla Version
-[++] Joomla 3.10.11
+[++] The target is not alive!
 
-[+] Core Joomla Vulnerability
-[++] Target Joomla core is not vulnerable
-[++] 
-Shutting Down , Interrupt by user
-
-
-Your Report : reports/auto.tuwien.ac.at/

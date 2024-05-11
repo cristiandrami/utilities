@@ -1,0 +1,11 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 16:24 CEST
+Stats: 0:01:32 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 91.00% done; ETC: 16:26 (0:00:09 remaining)
+Stats: 0:01:32 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 91.50% done; ETC: 16:26 (0:00:09 remaining)
+Nmap scan report for samlt1.it.tuwien.ac.at (128.130.16.12)
+Host is up.
+All 1000 scanned ports on samlt1.it.tuwien.ac.at (128.130.16.12) are filtered
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 101.34 seconds

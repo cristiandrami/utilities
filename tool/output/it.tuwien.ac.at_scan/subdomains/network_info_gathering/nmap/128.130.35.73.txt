@@ -1,0 +1,7 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 15:39 CEST
+Nmap scan report for search1.it.tuwien.ac.at (128.130.35.73)
+Host is up.
+All 1000 scanned ports on search1.it.tuwien.ac.at (128.130.35.73) are filtered
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 101.31 seconds

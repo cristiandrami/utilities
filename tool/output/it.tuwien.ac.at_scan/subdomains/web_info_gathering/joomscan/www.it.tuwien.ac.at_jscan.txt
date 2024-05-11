@@ -20,5 +20,38 @@ Processing https://www.it.tuwien.ac.at/ ...
 [++] Firewall not detected
 
 [+] Detecting Joomla Version
-[++] The target is not alive!
+[++] ver 404
 
+
+[+] Core Joomla Vulnerability
+[++] Target Joomla core is not vulnerable
+
+[+] Checking apache info/status files
+[++] Readable info/status files are not found
+
+[+] admin finder
+[++] Admin page not found
+
+[+] Checking robots.txt existing
+[++] robots.txt is found
+path : https://www.it.tuwien.ac.at/robots.txt 
+
+Interesting path found from robots.txt
+https://www.it.tuwien.ac.at/fileadmin/_temp_/
+https://www.it.tuwien.ac.at/typo3/
+https://www.it.tuwien.ac.at/typo3conf/
+https://www.it.tuwien.ac.at/typo3/sysext/frontend/Resources/Public/*
+https://www.it.tuwien.ac.at/404/
+
+
+[+] Finding common backup files name
+[++] Backup files are not found
+
+[+] Finding common log files name
+[++] error log is not found
+
+[+] Checking sensitive config.php.x file
+[++] Readable config files are not found
+
+
+Your Report : reports/www.it.tuwien.ac.at/

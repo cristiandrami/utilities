@@ -1,0 +1,10 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 15:36 CEST
+Nmap scan report for surveyapp.it.tuwien.ac.at (128.130.35.222)
+Host is up (0.0055s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd 2.4.37 ((Red Hat Enterprise Linux) OpenSSL/1.1.1k)
+443/tcp open  ssl/http Apache httpd 2.4.37 ((Red Hat Enterprise Linux) OpenSSL/1.1.1k)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.79 seconds

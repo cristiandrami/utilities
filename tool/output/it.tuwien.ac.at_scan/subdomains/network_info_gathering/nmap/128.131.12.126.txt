@@ -1,0 +1,10 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 15:37 CEST
+Nmap scan report for shiny-analytics.it.tuwien.ac.at (128.131.12.126)
+Host is up (0.0056s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx 1.26.0
+443/tcp open  ssl/http nginx 1.26.0
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.72 seconds

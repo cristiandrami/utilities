@@ -10,6 +10,11 @@ import typer
 from typer import colors
 import sublist3r 
 import nmap
+from markdown_pdf import MarkdownPdf
+from markdown_pdf import Section
+
+
+
 
 app = typer.Typer()
 custom_theme = Theme({
@@ -225,17 +230,94 @@ def scan_with_nmap_IPs(unique_IPs):
         output_file = f"{ip.strip()}.txt"
         output_path = os.path.join(output_directory, output_file)
 
-        # execute nmap
-        command = ["nmap", ip.strip(), '-sV', '-T4', '-Pn']
-        try:
-            with open(output_path, "w") as output_file:
-                console.print(f'[INFO] Starting nmap scan on {ip}\n', style='info')
-                subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=False)
-            console.print(f"[SUCCESS] nmap scan completed for {ip.strip()}. Results saved in {output_path}", style='success')
-        except subprocess.CalledProcessError as e:
-            print(f"[ERROR] nmap error while scanning {ip.strip()}: {e}", style='error')
-        except Exception as e:
-            console.print(f"[ERROR] nmap error occurred: {e}", style='error')
+        # in this way io don't lose the activity already done 
+        if not os.path.exists(output_path):
+            # execute nmap
+            command = ["nmap", ip.strip(), '-sV', '-T4', '-Pn']
+            try:
+                with open(output_path, "w") as output_file:
+                    console.print(f'[INFO] Starting nmap scan on {ip}\n', style='info')
+                    subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=False)
+                console.print(f"[SUCCESS] nmap scan completed for {ip.strip()}. Results saved in {output_path}", style='success')
+            except subprocess.CalledProcessError as e:
+                print(f"[ERROR] nmap error while scanning {ip.strip()}: {e}", style='error')
+            except Exception as e:
+                console.print(f"[ERROR] nmap error occurred: {e}", style='error')
+        else:
+            console.print(f"[SUCCESS] Nmap Output file {output_path} for {ip} already present, maybe from previous scan", style='success')
+
+
+
+
+
+def scan_with_dirb(domains):
+    script_directory = os.path.dirname(__file__)
+    for domain in domains:
+        url = 'https://www.'+domain+'/'
+
+        if domain == ORIGINAL_DOMAIN:
+            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "dirb")
+        else:
+            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan","subdomains", "web_info_gathering", "dirb")
+
+        output_file = f"{domain}.txt"
+        output_path = os.path.join(output_directory, output_file)
+
+        #to don't lose the activities already done
+        if not os.path.exists(output_path):
+            try:
+
+                os.makedirs(output_directory, exist_ok=True)
+                command = ['dirb', url, '-r', '-o', output_path]
+
+            
+                console.print(f'[INFO] Starting dirb scan on {domain}\n', style='info')
+                process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                errors = process.stderr.read()
+                if errors:
+                    console.print(f"error executing dirb {url} -r: {errors}", style="error")
+                else:
+                    console.print(f"[SUCCESS] dirb scan completed for {url}. Results saved in {output_path}", style="success")
+            except Exception as e:
+                console.print(f"error on executing dirb {url} -r: {e}", style="error")
+        else:
+            console.print(f"[SUCCESS] Dirb Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
+
+
+def scan_with_nikto(domains):
+    script_directory = os.path.dirname(__file__)
+    for domain in domains:
+        url = 'https://'+domain+'/'
+
+        if domain == ORIGINAL_DOMAIN:
+            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nikto")
+        else:
+            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan","subdomains", "web_info_gathering", "nikto")
+
+        output_file = f"{domain}.txt"
+        output_path = os.path.join(output_directory, output_file)
+
+        #to don't lose the activities already done
+        if not os.path.exists(output_path):
+            try:
+
+                os.makedirs(output_directory, exist_ok=True)
+                command = ['nikto', '-host', url, '-o', output_path]
+
+            
+                console.print(f'[INFO] Starting nikto scan on {domain}\n', style='info')
+                process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                errors = process.stderr.read()
+                if errors:
+                    console.print(f"error executing nikto {url} -r: {errors}", style="error")
+                else:
+                    console.print(f"[SUCCESS] nikto scan completed for {url}. Results saved in {output_path}", style="success")
+            except Exception as e:
+                console.print(f"error on executing nikto {url} -r: {e}", style="error")
+        else:
+            console.print(f"[SUCCESS] Nikto Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
+
+
 
 def scan_with_nmap_domains(unique_domains):
     script_directory = os.path.dirname(__file__)
@@ -250,20 +332,25 @@ def scan_with_nmap_domains(unique_domains):
         
         # check if the output directory exists, if not create it
         os.makedirs(output_directory, exist_ok=True)
-        output_file = f"nmap_{domain.strip()}_scan.txt"
+        output_file = f"{domain.strip()}.txt"
         output_path = os.path.join(output_directory, output_file)
 
-        # execute nmap
-        command = ["nmap", domain.strip(), '-sV', '-T4', '-Pn']
-        try:
-            with open(output_path, "w") as output_file:
-                console.print(f'[INFO] Starting nmap scan on {domain}\n', style='info')
-                subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=False)
-            console.print(f"[SUCCESS] nmap scan completed for {domain.strip()}. Results saved in {output_path}", style='success')
-        except subprocess.CalledProcessError as e:
-            print(f"[ERROR] nmap error while scanning {domain.strip()}: {e}", style='error')
-        except Exception as e:
-            console.print(f"[ERROR] nmap error occurred: {e}", style='error')
+        #to don't lose the activities already done
+        if not os.path.exists(output_path):
+            # execute nmap
+            command = ["nmap", domain.strip(), '-sV', '-T4', '-Pn']
+            try:
+                with open(output_path, "w") as output_file:
+                    console.print(f'[INFO] Starting nmap scan on {domain}\n', style='info')
+                    subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=False)
+                console.print(f"[SUCCESS] nmap scan completed for {domain.strip()}. Results saved in {output_path}", style='success')
+            except subprocess.CalledProcessError as e:
+                print(f"[ERROR] nmap error while scanning {domain.strip()}: {e}", style='error')
+            except Exception as e:
+                console.print(f"[ERROR] nmap error occurred: {e}", style='error')
+        else:
+            console.print(f"[SUCCESS] Nmap Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
+
             
 
 def scan_with_joomla(domains):
@@ -276,29 +363,33 @@ def scan_with_joomla(domains):
         else:
             output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan","subdomains", "web_info_gathering", "joomscan")
 
-        output_file = f"{domain}_jscan.txt"
+        output_file = f"{domain}.txt"
         output_path = os.path.join(output_directory, output_file)
         
-        try:
-            joomscan_path = os.path.join(script_directory, "joomscan", "joomscan.pl")
+        #to don't lose the activities already done
+        if not os.path.exists(output_path):
+            try:
+                joomscan_path = os.path.join(script_directory, "joomscan", "joomscan.pl")
 
-            os.makedirs(output_directory, exist_ok=True)
-            command = ['perl', joomscan_path, '-u', url]
+                os.makedirs(output_directory, exist_ok=True)
+                command = ['perl', joomscan_path, '-u', url]
 
-            with open(output_path, "w") as f:
-                console.print(f'[INFO] Starting joomla scan on {domain}\n', style='info')
-                process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-                for line in process.stdout:
-                    filtered_line = remove_non_printable(line)
-                    f.write(filtered_line)
+                with open(output_path, "w") as f:
+                    console.print(f'[INFO] Starting joomla scan on {domain}\n', style='info')
+                    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                    for line in process.stdout:
+                        filtered_line = remove_non_printable(line)
+                        f.write(filtered_line)
 
-            errors = process.stderr.read()
-            if errors:
-                console.print(f"error executing perl joomscan -t {url}: {errors}", style="error")
-            else:
-                console.print(f"[SUCCESS] joomla scan completed for {url}. Results saved in {output_path}", style="success")
-        except Exception as e:
-            console.print(f"error on executing joomscan -t {url}: {e}", style="error")
+                errors = process.stderr.read()
+                if errors:
+                    console.print(f"error executing perl joomscan -t {url}: {errors}", style="error")
+                else:
+                    console.print(f"[SUCCESS] joomla scan completed for {url}. Results saved in {output_path}", style="success")
+            except Exception as e:
+                console.print(f"error on executing joomscan -t {url}: {e}", style="error")
+        else:
+            console.print(f"[SUCCESS] Joomla Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
 
 
 
@@ -309,29 +400,145 @@ def scan_with_nuclei(domains):
         if domain == ORIGINAL_DOMAIN:
             output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nuclei")
         else:
-            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan","subdomains" "web_info_gathering", "nuclei")
+            output_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", "subdomains" "web_info_gathering", "nuclei")
 
-        output_file = f"{domain}_nuclei.txt"
+        output_file = f"{domain}.txt"
         output_path = os.path.join(output_directory, output_file)
 
         nuclei_path = os.path.join(script_directory, "nuclei", "nuclei")
         nuclei_tempaltes_path = os.path.join(script_directory, "nuclei", "nuclei-templates")
 
-        command = [nuclei_path, "-u", domain, "-t", nuclei_tempaltes_path, "-rl", "5", "-o", output_path]
-
-        try:
-            os.makedirs(output_directory, exist_ok=True)
-            with open(output_path, "w") as output_file:
-                console.print(f'[INFO] Starting nuclei scan on {domain}\n', style='info')
-                subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            console.print(f'[SUCCESS] nuclei scan completed for {domain}. Results saved in {output_path}', style="success")
-        except subprocess.CalledProcessError as e:
-            console.print(f"[Error] nuclei error occurred while scanning {domain}: {e}")
-        except Exception as e:
-            console.print(f"[Error] nuclei error occurred while scanning {domain}: {e}")
+        command = [nuclei_path, "-u", domain, "-t", nuclei_tempaltes_path, "-rl", "10", "-o", output_path]
+        
+        #to don't lose the activities already done
+        if not os.path.exists(output_path):
+            try:
+                os.makedirs(output_directory, exist_ok=True)
+                with open(output_path, "w") as output_file:
+                    console.print(f'[INFO] Starting nuclei scan on {domain}\n', style='info')
+                    subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                console.print(f'[SUCCESS] nuclei scan completed for {domain}. Results saved in {output_path}', style="success")
+            except subprocess.CalledProcessError as e:
+                console.print(f"[Error] nuclei error occurred while scanning {domain}: {e}")
+            except Exception as e:
+                console.print(f"[Error] nuclei error occurred while scanning {domain}: {e}")
+        else:
+            console.print(f"[SUCCESS] Nuclei Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
 
         
-        
+def create_joomla_report(joomla_dir):
+    markdown = '## Joomscan report\n\n\nThis is the result of the Joomscan activity.\n **Here you can find only the relevant information** \n **Remeber:** <span style="color:red; font-weight: bold;"> when the text is red, something interesting is found </span>  '
+    if not os.path.isdir(joomla_dir):
+        return markdown
+    lines = ''
+    is_real_content = False
+    for filename in os.listdir(joomla_dir):
+        filepath = os.path.join(joomla_dir, filename)
+        name, _ = os.path.splitext(filename)
+        if os.path.isfile(filepath):
+            markdown += f'\n### Joomscan for {name}'
+            with open(filepath, 'r', encoding='utf-8') as file:
+                 for line in file:
+                    if '[+] FireWall Detector' in line:
+                        is_real_content=True
+                    if "not found" not in line.lower() and "not detected" not in line.lower() and "not vulnerable" not in line.lower() and "reports/" not in line.lower():
+                        if is_real_content:
+                            if '[++]' in line.lower():
+                                parsed_line = '\n <span style="color:red; font-weight: bold;">' + line.strip() + '</span> \n'
+                            elif '[++]' not in line.lower() and '[+]' not in line.lower() and not (line== '' or line=='\n'):
+                                if line.startswith('http'):
+                                    parsed_line = f'\n - [{line.strip()}]({line.strip()}) \n'
+                                else:
+                                    parsed_line = '\n - ' + line.strip()+' \n'
+                            else: 
+                                parsed_line = '\n ' + line.strip()+' \n'
+
+                            lines+=parsed_line
+    lines+='\n\n\n\n'
+    markdown+=lines
+    return markdown
+
+
+def create_dirb_report(dirb_dir):
+    markdown = '## Dirb report\n\n\nThis is the result of the Dirb activity.\n **Here you can find only the relevant information** \n **Remeber:** <span style="color:red; font-weight: bold;"> Only responses with code 200 are reported here </span>  '
+    print(dirb_dir)
+    if not os.path.isdir(dirb_dir):
+        return markdown
+    lines = ''
+    is_real_content = False
+    for filename in os.listdir(dirb_dir):
+        filepath = os.path.join(dirb_dir, filename)
+        name, _ = os.path.splitext(filename)
+        if os.path.isfile(filepath):
+            markdown += f'\n### Dirb scan for {name}'
+            with open(filepath, 'r', encoding='utf-8') as file:
+                 for line in file:
+                    if '+' in line:
+                        is_real_content=True
+                        print(line)
+                    if "CODE:200" in line:
+                        splitted = line.split()
+
+                        if is_real_content:
+                            parsed_line = f'\n- [{splitted[1]}]({splitted[1]}) \t\t\t\t\t\t\t\t {splitted[2]} \n'
+                            lines+=parsed_line
+    lines+='\n\n\n\n'
+    markdown+=lines
+    return markdown
+
+
+                
+
+
+def create_main_domain_report():
+    script_directory = os.path.dirname(__file__)
+    web_joomla_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "joomscan")
+    web_nikto_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nikto")
+    web_dirb_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"{ORIGINAL_DOMAIN}","web_info_gathering", "dirb")
+    web_nuclei_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nuclei")
+    network_nmap_directory = os.path.join(script_directory, "output", f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "network_info_gathering", "nmap")
+
+    markdown_title = f"""
+                    (        )  (    (    (         
+               (    )\ )  ( /(  )\ ) )\ ) )\ )      
+               )\  (()/(  )\())(()/((()/((()/( (    
+             (((_)  /(_))((_)\  /(_))/(_))/(_)))\   
+             )\___ (_)) __ ((_)(_)) (_)) (_)) ((_)  
+            ((/ __|| _ \\ \ / / | _ \|_ _|| _ \| __| 
+             | (__ |   / \ V / |  _/ | | |  _/| _|  
+              \___||_|_\  |_|  |_|  |___||_|  |___|                                         
+"""
+    
+    markdown_title += f"# Report for domain {ORIGINAL_DOMAIN}\n\n\n"
+
+    joomla_report_markdown = create_joomla_report(web_joomla_directory)
+    dirb_report_markdown = create_dirb_report(web_dirb_directory)
+
+    final_report_path = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"final_report")
+    os.makedirs(final_report_path, exist_ok=True)
+
+    final_report_name = 'final_report_main_domain.pdf'
+
+    final_report = os.path.join(final_report_path, final_report_name)
+
+    pdf = MarkdownPdf(toc_level=2)
+    pdf.add_section(Section(markdown_title, toc=False))
+    pdf.add_section(Section(joomla_report_markdown, toc=False))
+    pdf.add_section(Section(dirb_report_markdown, toc=False))
+
+    pdf.save(final_report)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @app.command()
@@ -355,20 +562,30 @@ def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (
     
     status.stop()
 
-    status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
+    status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap, Dirb] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
     with status:
-        nmap_thread = threading.Thread(target=scan_with_nmap_IPs, args=(unique_ip_addresses,))
-        joomla_thread = threading.Thread(target=scan_with_joomla, args=(domains,))
-
+        """joomla_thread = threading.Thread(target=scan_with_joomla, args=(domains,))
+        joomla_thread.start()
+        joomla_thread.join()"""
+        """nmap_thread = threading.Thread(target=scan_with_nmap_IPs, args=(unique_ip_addresses,))
+        
+        dirb_thread = threading.Thread(target=scan_with_dirb, args=(domains,))
+        nikto_thread = threading.Thread(target=scan_with_nikto, args=(domains,))
         nuclei_thread = threading.Thread(target=scan_with_nuclei, args=(domains,))
 
         nmap_thread.start()
         joomla_thread.start()
-        #nuclei_thread.start()
+        nuclei_thread.start()
+        dirb_thread.start()
+        nikto_thread.start()
 
         nmap_thread.join()
         joomla_thread.join()
-        #nuclei_thread.join()
+        nuclei_thread.join()
+        dirb_thread.join()
+        nikto_thread.join()"""
+
+        create_main_domain_report()
 
     status.stop()
 

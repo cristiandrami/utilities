@@ -1,7 +1,7 @@
-Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-09 17:06 CEST
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-11 15:40 CEST
 Nmap scan report for wiki-ro.it.tuwien.ac.at (128.131.19.77)
 Host is up.
 All 1000 scanned ports on wiki-ro.it.tuwien.ac.at (128.131.19.77) are filtered
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 101.38 seconds
+Nmap done: 1 IP address (1 host up) scanned in 101.35 seconds

@@ -12,6 +12,7 @@ import sublist3r
 import nmap
 from markdown_pdf import MarkdownPdf
 from markdown_pdf import Section
+from src.report_generator import ReportGenerator
 
 
 
@@ -426,110 +427,6 @@ def scan_with_nuclei(domains):
             console.print(f"[SUCCESS] Nuclei Output file {output_path} for {domain} already present, maybe from previous scan", style='success')
 
         
-def create_joomla_report(joomla_dir):
-    markdown = '## Joomscan report\n\n\nThis is the result of the Joomscan activity.\n **Here you can find only the relevant information** \n **Remeber:** <span style="color:red; font-weight: bold;"> when the text is red, something interesting is found </span>  '
-    if not os.path.isdir(joomla_dir):
-        return markdown
-    lines = ''
-    is_real_content = False
-    for filename in os.listdir(joomla_dir):
-        filepath = os.path.join(joomla_dir, filename)
-        name, _ = os.path.splitext(filename)
-        if os.path.isfile(filepath):
-            markdown += f'\n### Joomscan for {name}'
-            with open(filepath, 'r', encoding='utf-8') as file:
-                 for line in file:
-                    if '[+] FireWall Detector' in line:
-                        is_real_content=True
-                    if "not found" not in line.lower() and "not detected" not in line.lower() and "not vulnerable" not in line.lower() and "reports/" not in line.lower():
-                        if is_real_content:
-                            if '[++]' in line.lower():
-                                parsed_line = '\n <span style="color:red; font-weight: bold;">' + line.strip() + '</span> \n'
-                            elif '[++]' not in line.lower() and '[+]' not in line.lower() and not (line== '' or line=='\n'):
-                                if line.startswith('http'):
-                                    parsed_line = f'\n - [{line.strip()}]({line.strip()}) \n'
-                                else:
-                                    parsed_line = '\n - ' + line.strip()+' \n'
-                            else: 
-                                parsed_line = '\n ' + line.strip()+' \n'
-
-                            lines+=parsed_line
-    lines+='\n\n\n\n'
-    markdown+=lines
-    return markdown
-
-
-def create_dirb_report(dirb_dir):
-    markdown = '## Dirb report\n\n\nThis is the result of the Dirb activity.\n **Here you can find only the relevant information** \n **Remeber:** <span style="color:red; font-weight: bold;"> Only responses with code 200 are reported here </span>  '
-    print(dirb_dir)
-    if not os.path.isdir(dirb_dir):
-        return markdown
-    lines = ''
-    is_real_content = False
-    for filename in os.listdir(dirb_dir):
-        filepath = os.path.join(dirb_dir, filename)
-        name, _ = os.path.splitext(filename)
-        if os.path.isfile(filepath):
-            markdown += f'\n### Dirb scan for {name}'
-            with open(filepath, 'r', encoding='utf-8') as file:
-                 for line in file:
-                    if '+' in line:
-                        is_real_content=True
-                        print(line)
-                    if "CODE:200" in line:
-                        splitted = line.split()
-
-                        if is_real_content:
-                            parsed_line = f'\n- [{splitted[1]}]({splitted[1]}) \t\t\t\t\t\t\t\t {splitted[2]} \n'
-                            lines+=parsed_line
-    lines+='\n\n\n\n'
-    markdown+=lines
-    return markdown
-
-
-                
-
-
-def create_main_domain_report():
-    script_directory = os.path.dirname(__file__)
-    web_joomla_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "joomscan")
-    web_nikto_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nikto")
-    web_dirb_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"{ORIGINAL_DOMAIN}","web_info_gathering", "dirb")
-    web_nuclei_directory = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"{ORIGINAL_DOMAIN}", "web_info_gathering", "nuclei")
-    network_nmap_directory = os.path.join(script_directory, "output", f"{ORIGINAL_DOMAIN}_scan",f"{ORIGINAL_DOMAIN}", "network_info_gathering", "nmap")
-
-    markdown_title = f"""
-                    (        )  (    (    (         
-               (    )\ )  ( /(  )\ ) )\ ) )\ )      
-               )\  (()/(  )\())(()/((()/((()/( (    
-             (((_)  /(_))((_)\  /(_))/(_))/(_)))\   
-             )\___ (_)) __ ((_)(_)) (_)) (_)) ((_)  
-            ((/ __|| _ \\ \ / / | _ \|_ _|| _ \| __| 
-             | (__ |   / \ V / |  _/ | | |  _/| _|  
-              \___||_|_\  |_|  |_|  |___||_|  |___|                                         
-"""
-    
-    markdown_title += f"# Report for domain {ORIGINAL_DOMAIN}\n\n\n"
-
-    joomla_report_markdown = create_joomla_report(web_joomla_directory)
-    dirb_report_markdown = create_dirb_report(web_dirb_directory)
-
-    final_report_path = os.path.join(script_directory, "output",f"{ORIGINAL_DOMAIN}_scan", f"final_report")
-    os.makedirs(final_report_path, exist_ok=True)
-
-    final_report_name = 'final_report_main_domain.pdf'
-
-    final_report = os.path.join(final_report_path, final_report_name)
-
-    pdf = MarkdownPdf(toc_level=2)
-    pdf.add_section(Section(markdown_title, toc=False))
-    pdf.add_section(Section(joomla_report_markdown, toc=False))
-    pdf.add_section(Section(dirb_report_markdown, toc=False))
-
-    pdf.save(final_report)
-
-
-
 
 
 
@@ -556,6 +453,7 @@ def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (
         (all_ip_addresses, domains) = process_domain(domain, output_filename, all_subdomains)
         unique_ip_addresses=remove_duplicates_and_save(all_ip_addresses)
         sort_file(output_filename)
+        global binded_ips
         binded_ips = bind_unique_IPs_to_domains(output_filename)
 
         #console.print(binded_ips)
@@ -585,7 +483,9 @@ def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (
         dirb_thread.join()
         nikto_thread.join()"""
 
-        create_main_domain_report()
+        ReportGenerator(ORIGINAL_DOMAIN, binded_ips, all_subdomains).create_main_domain_report()
+
+      
 
     status.stop()
 

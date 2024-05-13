@@ -1,0 +1,21 @@
+[nginx-version] [http] [info] https://matrix-q.it.tuwien.ac.at ["nginx/1.25.4"]
+[tech-detect:nginx] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:strict-transport-security] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:referrer-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:clear-site-data] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:content-security-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:permissions-policy] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:x-frame-options] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:x-content-type-options] [http] [info] https://matrix-q.it.tuwien.ac.at
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://matrix-q.it.tuwien.ac.at
+[element-web-detect] [http] [info] https://matrix-q.it.tuwien.ac.at/version ["1.11.66"]
+[matrix-detect] [http] [info] https://matrix-q.it.tuwien.ac.at/.well-known/matrix/server ["matrix-q.it.tuwien.ac.at:443"]
+[matrix-homeserver-detect] [http] [info] https://matrix-q.it.tuwien.ac.at/_matrix/federation/v1/version ["Synapse","1.106.0"]
+[matrix-detect] [http] [info] https://matrix-q.it.tuwien.ac.at/.well-known/matrix/client ["https://matrix-q.it.tuwien.ac.at"]
+[waf-detect:nginxgeneric] [http] [info] https://matrix-q.it.tuwien.ac.at
+[ssl-issuer] [ssl] [info] matrix-q.it.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] matrix-q.it.tuwien.ac.at:443 ["*.matrix-q.it.tuwien.ac.at","matrix-q.it.tuwien.ac.at"]
+[wildcard-tls] [ssl] [info] matrix-q.it.tuwien.ac.at:443 ["CN: *.matrix-q.it.tuwien.ac.at","SAN: [*.matrix-q.it.tuwien.ac.at matrix-q.it.tuwien.ac.at]"]

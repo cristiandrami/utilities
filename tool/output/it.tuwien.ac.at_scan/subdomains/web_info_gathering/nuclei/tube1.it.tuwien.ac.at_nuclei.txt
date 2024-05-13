@@ -1,0 +1,2 @@
+[ssl-issuer] [ssl] [info] tube1.it.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] tube1.it.tuwien.ac.at:443 ["tube1.it.tuwien.ac.at"]

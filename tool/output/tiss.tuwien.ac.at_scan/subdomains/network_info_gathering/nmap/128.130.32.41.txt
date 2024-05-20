@@ -1,0 +1,7 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-15 00:08 CEST
+Nmap scan report for doc.tiss.tuwien.ac.at (128.130.32.41)
+Host is up.
+All 1000 scanned ports on doc.tiss.tuwien.ac.at (128.130.32.41) are filtered
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 101.38 seconds

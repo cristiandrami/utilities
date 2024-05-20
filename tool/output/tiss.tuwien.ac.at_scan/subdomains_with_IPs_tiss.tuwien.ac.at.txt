@@ -1,0 +1,65 @@
+DOMAIN                                                                                              IP ADDRESS
+ldap3.tiss.tuwien.ac.at                                                                             128.130.32.100
+raum.tiss.tuwien.ac.at                                                                              128.130.32.108
+tiss.tuwien.ac.at                                                                                   128.130.32.110
+www.tiss.tuwien.ac.at                                                                               128.130.32.110
+prod.tiss.tuwien.ac.at                                                                              128.130.32.110
+git.tiss.tuwien.ac.at                                                                               128.130.32.14
+redmine.tiss.tuwien.ac.at                                                                           128.130.32.16
+dev.tiss.tuwien.ac.at                                                                               128.130.32.3
+pm.tiss.tuwien.ac.at                                                                                128.130.32.3
+turm.tiss.tuwien.ac.at                                                                              128.130.32.33
+keycloak.tiss.tuwien.ac.at                                                                          128.130.32.35
+fis.tiss.tuwien.ac.at                                                                               128.130.32.40
+doc.tiss.tuwien.ac.at                                                                               128.130.32.41
+tucks.tiss.tuwien.ac.at                                                                             128.130.32.50
+tucksa.tiss.tuwien.ac.at                                                                            128.130.32.51
+tucksb.tiss.tuwien.ac.at                                                                            128.130.32.52
+tucreada.tiss.tuwien.ac.at                                                                          128.130.32.53
+tucreadb.tiss.tuwien.ac.at                                                                          128.130.32.54
+tucread.tiss.tuwien.ac.at                                                                           128.130.32.58
+maintenance.tiss.tuwien.ac.at                                                                       128.130.32.68
+account.tiss.tuwien.ac.at                                                                           128.130.32.75
+amtssignatur.tiss.tuwien.ac.at                                                                      128.130.32.90
+ewp.tiss.tuwien.ac.at                                                                               128.130.32.96
+raumkatalog.tiss.tuwien.ac.at                                                                       128.130.32.99
+dek.tiss.tuwien.ac.at                                                                               128.130.33.26
+fwd.tiss.tuwien.ac.at                                                                               128.130.8.25
+tucreadb-sp.tiss.tuwien.ac.at                                                                       128.131.26.56
+datengrube.tiss.tuwien.ac.at                                                                        128.131.32.5
+epaytest.tiss.tuwien.ac.at                                                                          128.131.33.130
+ewptest.tiss.tuwien.ac.at                                                                           128.131.33.131
+qa.tiss.tuwien.ac.at                                                                                128.131.33.50
+www.account.tiss.tuwien.ac.at                                                                       No IP, maybe it is down or unreachable
+www.amtssignatur.tiss.tuwien.ac.at                                                                  No IP, maybe it is down or unreachable
+www.datengrube.tiss.tuwien.ac.at                                                                    No IP, maybe it is down or unreachable
+demo.tiss.tuwien.ac.at                                                                              No IP, maybe it is down or unreachable
+www.dev.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+dev1.tiss.tuwien.ac.at                                                                              No IP, maybe it is down or unreachable
+devcloud.tiss.tuwien.ac.at                                                                          No IP, maybe it is down or unreachable
+www.doc.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+dolly.tiss.tuwien.ac.at                                                                             No IP, maybe it is down or unreachable
+dspaceqa.tiss.tuwien.ac.at                                                                          No IP, maybe it is down or unreachable
+www.dspaceqa.tiss.tuwien.ac.at                                                                      No IP, maybe it is down or unreachable
+www.epaytest.tiss.tuwien.ac.at                                                                      No IP, maybe it is down or unreachable
+www.ewp.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+www.ewptest.tiss.tuwien.ac.at                                                                       No IP, maybe it is down or unreachable
+www.fis.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+www.fwd.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+www.git.tiss.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+java.tiss.tuwien.ac.at                                                                              No IP, maybe it is down or unreachable
+www.keycloak.tiss.tuwien.ac.at                                                                      No IP, maybe it is down or unreachable
+www.ldap3.tiss.tuwien.ac.at                                                                         No IP, maybe it is down or unreachable
+www.maintenance.tiss.tuwien.ac.at                                                                   No IP, maybe it is down or unreachable
+migration.tiss.tuwien.ac.at                                                                         No IP, maybe it is down or unreachable
+odevmaster.tiss.tuwien.ac.at                                                                        No IP, maybe it is down or unreachable
+www.odevmaster.tiss.tuwien.ac.at                                                                    No IP, maybe it is down or unreachable
+www.qa.tiss.tuwien.ac.at                                                                            No IP, maybe it is down or unreachable
+r-c-3-sp.tiss.tuwien.ac.at                                                                          No IP, maybe it is down or unreachable
+www.raumkatalog.tiss.tuwien.ac.at                                                                   No IP, maybe it is down or unreachable
+www.redmine.tiss.tuwien.ac.at                                                                       No IP, maybe it is down or unreachable
+svn.tiss.tuwien.ac.at                                                                               No IP, maybe it is down or unreachable
+trac.tiss.tuwien.ac.at                                                                              No IP, maybe it is down or unreachable
+tuck-test.tiss.tuwien.ac.at                                                                         No IP, maybe it is down or unreachable
+tuckboot.tiss.tuwien.ac.at                                                                          No IP, maybe it is down or unreachable
+www.turm.tiss.tuwien.ac.at                                                                          No IP, maybe it is down or unreachable

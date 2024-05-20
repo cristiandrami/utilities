@@ -1,6 +1,0 @@
-[ssl-issuer] [ssl] [info] registry.it.tuwien.ac.at:443 ["Unspecified"]
-[expired-ssl] [ssl] [low] registry.it.tuwien.ac.at:443 ["2024-03-17 08:18:49 +0000 UTC"]
-[mismatched-ssl-certificate] [ssl] [low] registry.it.tuwien.ac.at:443 ["CN: allianz-ptvap02.vm.at.nxlr.eu"]
-[revoked-ssl-certificate] [ssl] [low] registry.it.tuwien.ac.at:443
-[ssl-dns-names] [ssl] [info] registry.it.tuwien.ac.at:443 ["allianz-ptvap02.vm.at.nxlr.eu"]
-[untrusted-root-certificate] [ssl] [low] registry.it.tuwien.ac.at:443

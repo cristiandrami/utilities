@@ -1,0 +1,2 @@
+[ssl-issuer] [ssl] [info] epaytest.tiss.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] epaytest.tiss.tuwien.ac.at:443 ["www.epaytest.tiss.tuwien.ac.at","epaytest.tiss.tuwien.ac.at"]

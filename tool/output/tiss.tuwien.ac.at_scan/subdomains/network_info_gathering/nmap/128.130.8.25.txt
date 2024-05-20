@@ -1,0 +1,13 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-15 00:04 CEST
+Nmap scan report for fwd.tiss.tuwien.ac.at (128.130.8.25)
+Host is up (0.0054s latency).
+Not shown: 996 filtered ports
+PORT      STATE SERVICE           VERSION
+80/tcp    open  http              Cisco ASA firewall http config
+443/tcp   open  ssl/https?
+1720/tcp  open  h323q931?
+10000/tcp open  snet-sensor-mgmt?
+Service Info: Device: firewall
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 155.94 seconds

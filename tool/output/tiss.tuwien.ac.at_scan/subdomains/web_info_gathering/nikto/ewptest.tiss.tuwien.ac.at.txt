@@ -1,0 +1,7 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: ewptest.tiss.tuwien.ac.at
++ Target Port: 443
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /: Server is using a wildcard certificate: '*.apps.dev.csd.tuwien.ac.at'
++ GET /: Hostname 'ewptest.tiss.tuwien.ac.at' does not match certificate's CN '*.apps.dev.csd.tuwien.ac.at'
++ -3092: GET /css: /css: This might be interesting...

@@ -1,3 +1,0 @@
-[http-trace:trace-request] [http] [info] https://www.it.tuwien.ac.at
-[ssl-issuer] [ssl] [info] www.it.tuwien.ac.at:443 ["GEANT Vereniging"]
-[ssl-dns-names] [ssl] [info] www.it.tuwien.ac.at:443 ["it.tuwien.ac.at","www.it.tuwien.ac.at"]

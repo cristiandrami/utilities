@@ -1,0 +1,2 @@
+[ssl-issuer] [ssl] [info] keycloak.tiss.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] keycloak.tiss.tuwien.ac.at:443 ["keycloak.tiss.tuwien.ac.at","www.keycloak.tiss.tuwien.ac.at"]

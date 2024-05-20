@@ -1,0 +1,11 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: raumkatalog.tiss.tuwien.ac.at
++ Target Port: 443
++ GET /: Server leaks inodes via ETags, header found with file /, fields: 0x6424046d 0x1141 
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /: Cookie 65427a94c32e670ba535b80ca6ae8889 created without the secure flag
++ GET /: Cookie 65427a94c32e670ba535b80ca6ae8889 created without the httponly flag
++ GET /robots.txt: "robots.txt" retrieved but it does not contain any 'disallow' entries (which is odd).
++ GET /: Server is using a wildcard certificate: '*.tiss.tuwien.ac.at'
++ GET /sitemap.xml: Cookie 6f7275265ca8331ce96a1a282dfde72f created without the secure flag
++ GET /sitemap.xml: Cookie 6f7275265ca8331ce96a1a282dfde72f created without the httponly flag

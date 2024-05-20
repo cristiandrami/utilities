@@ -1,0 +1,2 @@
+[weak-cipher-suites:tls-1.0] [ssl] [low] fwd.tiss.tuwien.ac.at:443 ["[tls10 TLS_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] fwd.tiss.tuwien.ac.at:443 ["tls10"]

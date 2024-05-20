@@ -1,0 +1,7 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-05-14 23:47 CEST
+Nmap scan report for amtssignatur.tiss.tuwien.ac.at (128.130.32.90)
+Host is up.
+All 1000 scanned ports on amtssignatur.tiss.tuwien.ac.at (128.130.32.90) are filtered
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 101.40 seconds

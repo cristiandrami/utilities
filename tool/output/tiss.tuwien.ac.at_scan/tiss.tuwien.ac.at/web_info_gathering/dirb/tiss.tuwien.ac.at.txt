@@ -1,0 +1,19 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: /home/cristian/Scrivania/utilities/tool/output/tiss.tuwien.ac.at_scan/tiss.tuwien.ac.at/web_info_gathering/dirb/tiss.tuwien.ac.at.txt
+START_TIME: Tue May 14 23:34:02 2024
+URL_BASE: https://www.tiss.tuwien.ac.at/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://www.tiss.tuwien.ac.at/ ----
++ https://www.tiss.tuwien.ac.at/3g (CODE:302|SIZE:0)
++ https://www.tiss.tuwien.ac.at/access (CODE:302|SIZE:0)

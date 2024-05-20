@@ -12,7 +12,7 @@
     --=[Code name : Self Challenge
     @OWASP_JoomScan , @rezesp , @Ali_Razmjo0 , @OWASP
 
-Processing https://samlt2.app.it.tuwien.ac.at/ ...
+Processing https://axes.it.tuwien.ac.at/ ...
 
 
 

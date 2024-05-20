@@ -172,55 +172,59 @@ def remove_duplicates_and_save(all_ip_addresses, domain):
 
 
 @app.command()
-def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (REQUIRED)"), all_subdomains: bool = typer.Option(False, "--all-subdomains", "-a", help="Process all subdomains (default: False)")):
+def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (REQUIRED)"), all_subdomains: bool = typer.Option(False, "--all-subdomains", "-a", help="Process all subdomains (default: False)"), report: bool = typer.Option(False, "--report", "-r", help="Create the report (default: False) (Execute first the scan and then create the  report)") ):
     banner()
     if '' == domain:
         return
-
-    status = console.status(f"[{spinner_style}][STEP 1] Preliminary setup -> I'm scanning subdomains...", spinner_style=spinner_style)
-    with status:
-        filename=f"subdomains_with_IPs_{domain}.txt"
-        (all_ip_addresses, domains, original_ip) = process_domain(domain=domain, output_filename=filename, process_all_subdomains=all_subdomains)
-        unique_ip_addresses=remove_duplicates_and_save(all_ip_addresses=all_ip_addresses, domain=domain)
-        sort_file(input_filename=filename,domain=domain )
-        binded_ips = bind_unique_IPs_to_domains(filename=filename, domain=domain)
-
-        #console.print(binded_ips)
     
-    status.stop()
-
-    dirb_scanner = DirbScanner(original_domain=domain, console=console, domains=domains)
-    nuclei_scanner = NucleiScanner(original_domain=domain, domains=domains, console=console)
-    nmap_scanner = NmapScanner(original_domain=domain, original_ip=original_ip, unique_ips=unique_ip_addresses, console=console)
-    joom_scanner = JoomScanner(original_domain=domain, domains=domains, console=console)
-    nikto_scanner = NiktoScanner(original_domain=domain, domains=domains, console=console)
-
-
-    status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap, Dirb] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
-    with status:
-       
-        nmap_thread = threading.Thread(target=nmap_scanner.scan_with_nmap_IPs, args=())
-        joomla_thread = threading.Thread(target=joom_scanner.scan_with_joomla, args=())
-        dirb_thread = threading.Thread(target=dirb_scanner.scan_with_dirb, args=())
-        nikto_thread = threading.Thread(target=nikto_scanner.scan_with_nikto, args=())
-        nuclei_thread = threading.Thread(target=nuclei_scanner.scan_with_nuclei, args=())
-
-        nmap_thread.start()
-        joomla_thread.start()
-        nuclei_thread.start()
-        dirb_thread.start()
-        nikto_thread.start()
-
-        nmap_thread.join()
-        joomla_thread.join()
-        nuclei_thread.join()
-        dirb_thread.join()
-        nikto_thread.join()
+    if report:
         #ReportGenerator(domain, binded_ips, all_subdomains).create_main_domain_report()
+        pass
+    else:
+        status = console.status(f"[{spinner_style}][STEP 1] Preliminary setup -> I'm scanning subdomains...", spinner_style=spinner_style)
+        with status:
+            filename=f"subdomains_with_IPs_{domain}.txt"
+            (all_ip_addresses, domains, original_ip) = process_domain(domain=domain, output_filename=filename, process_all_subdomains=all_subdomains)
+            unique_ip_addresses=remove_duplicates_and_save(all_ip_addresses=all_ip_addresses, domain=domain)
+            sort_file(input_filename=filename,domain=domain )
+            binded_ips = bind_unique_IPs_to_domains(filename=filename, domain=domain)
 
-      
+            #console.print(binded_ips)
+        
+        status.stop()
 
-    status.stop()
+        dirb_scanner = DirbScanner(original_domain=domain, console=console, domains=domains)
+        nuclei_scanner = NucleiScanner(original_domain=domain, domains=domains, console=console)
+        nmap_scanner = NmapScanner(original_domain=domain, original_ip=original_ip, unique_ips=unique_ip_addresses, console=console)
+        joom_scanner = JoomScanner(original_domain=domain, domains=domains, console=console)
+        nikto_scanner = NiktoScanner(original_domain=domain, domains=domains, console=console)
+
+
+        status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap, Dirb] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
+        with status:
+        
+            nmap_thread = threading.Thread(target=nmap_scanner.scan_with_nmap_IPs, args=())
+            joomla_thread = threading.Thread(target=joom_scanner.scan_with_joomla, args=())
+            dirb_thread = threading.Thread(target=dirb_scanner.scan_with_dirb, args=())
+            nikto_thread = threading.Thread(target=nikto_scanner.scan_with_nikto, args=())
+            nuclei_thread = threading.Thread(target=nuclei_scanner.scan_with_nuclei, args=())
+
+            nmap_thread.start()
+            joomla_thread.start()
+            nuclei_thread.start()
+            dirb_thread.start()
+            nikto_thread.start()
+
+            nmap_thread.join()
+            joomla_thread.join()
+            nuclei_thread.join()
+            dirb_thread.join()
+            nikto_thread.join()
+            
+
+        
+
+        status.stop()
 
 if __name__ == "__main__":
     app()

@@ -9,7 +9,6 @@ from rich.theme import Theme
 import typer
 from typer import colors
 import sublist3r 
-import nmap
 from markdown_pdf import MarkdownPdf
 from markdown_pdf import Section
 from src.ReportGenerator import ReportGenerator

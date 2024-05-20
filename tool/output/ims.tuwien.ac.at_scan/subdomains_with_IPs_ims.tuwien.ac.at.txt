@@ -1,0 +1,17 @@
+DOMAIN                                                                                              IP ADDRESS
+apps.ims.tuwien.ac.at                                                                               128.131.167.205
+bhutan.ims.tuwien.ac.at                                                                             128.131.167.205
+famous-wiki.ims.tuwien.ac.at                                                                        128.131.167.205
+media.ims.tuwien.ac.at                                                                              128.131.167.205
+autoconfig.ims.tuwien.ac.at                                                                         128.131.20.180
+autodiscover.ims.tuwien.ac.at                                                                       128.131.20.180
+mail.ims.tuwien.ac.at                                                                               128.131.20.180
+ims.tuwien.ac.at                                                                                    128.131.20.182
+www.ims.tuwien.ac.at                                                                                128.131.20.182
+esel.ims.tuwien.ac.at                                                                               No IP, maybe it is down or unreachable
+lists.ims.tuwien.ac.at                                                                              No IP, maybe it is down or unreachable
+www.mail.ims.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable
+members.ims.tuwien.ac.at                                                                            No IP, maybe it is down or unreachable
+mozart.ims.tuwien.ac.at                                                                             No IP, maybe it is down or unreachable
+perception.ims.tuwien.ac.at                                                                         No IP, maybe it is down or unreachable
+traitsdb.ims.tuwien.ac.at                                                                           No IP, maybe it is down or unreachable

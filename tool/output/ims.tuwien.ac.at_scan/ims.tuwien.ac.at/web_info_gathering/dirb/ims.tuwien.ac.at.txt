@@ -1,0 +1,18 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: /home/cristian/Scrivania/utilities/tool/output/ims.tuwien.ac.at_scan/ims.tuwien.ac.at/web_info_gathering/dirb/ims.tuwien.ac.at.txt
+START_TIME: Mon May 20 15:19:46 2024
+URL_BASE: https://ims.tuwien.ac.at/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Fine tunning of NOT_FOUND detection
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://ims.tuwien.ac.at/ ----

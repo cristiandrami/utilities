@@ -1,0 +1,15 @@
+www.ims.tuwien.ac.at
+apps.ims.tuwien.ac.at
+autoconfig.ims.tuwien.ac.at
+autodiscover.ims.tuwien.ac.at
+bhutan.ims.tuwien.ac.at
+esel.ims.tuwien.ac.at
+famous-wiki.ims.tuwien.ac.at
+lists.ims.tuwien.ac.at
+mail.ims.tuwien.ac.at
+www.mail.ims.tuwien.ac.at
+media.ims.tuwien.ac.at
+members.ims.tuwien.ac.at
+mozart.ims.tuwien.ac.at
+perception.ims.tuwien.ac.at
+traitsdb.ims.tuwien.ac.at

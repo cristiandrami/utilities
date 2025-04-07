@@ -64,12 +64,12 @@ class ReportGenerator():
                 internal_lines = f'\n### Dirb scan for {name}'
                 with open(filepath, 'r', encoding='utf-8') as file:
                     for line in file:
-                        if '+' in line:
+                        if line.startswith('+'):
                             is_real_content=True
                         if "CODE:200" in line:
                             splitted = line.split()
 
-                            if is_real_content:
+                            if is_real_content :
                                 content+=1
                                 parsed_line = f'\n- [{splitted[1]}]({splitted[1]}) \t\t\t\t\t\t\t\t {splitted[2]} \n'
                                 internal_lines+=parsed_line

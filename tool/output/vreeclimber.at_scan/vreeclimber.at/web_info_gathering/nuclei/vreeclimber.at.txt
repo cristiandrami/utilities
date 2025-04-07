@@ -1,0 +1,30 @@
+[options-method] [http] [info] http://vreeclimber.at ["GET,POST,OPTIONS,HEAD"]
+[apache-detect] [http] [info] http://vreeclimber.at ["Apache"]
+[http-missing-security-headers:clear-site-data] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:x-frame-options] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:referrer-policy] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:x-content-type-options] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:strict-transport-security] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:content-security-policy] [http] [info] http://vreeclimber.at
+[http-missing-security-headers:permissions-policy] [http] [info] http://vreeclimber.at
+[robots-txt-endpoint] [http] [info] http://vreeclimber.at/robots.txt
+[waf-detect:apachegeneric] [http] [info] http://vreeclimber.at
+[pop3-capabilities-enum] [javascript] [info] vreeclimber.at:110 ["+OK Dovecot (Debian) ready."]
+[mysql-info] [javascript] [info] vreeclimber.at:3306 ["Version: 8.0.36-28","Transport: tcp"]
+[imap-detect] [tcp] [info] vreeclimber.at:143
+[mysql-detect] [tcp] [info] vreeclimber.at:3306
+[mysql-native-password] [tcp] [info] vreeclimber.at:3306
+[ssl-issuer] [ssl] [info] vreeclimber.at:443 ["Starfield Technologies, Inc."]
+[ssl-dns-names] [ssl] [info] vreeclimber.at:443 ["www.vreeclimber.at","vreeclimber.at"]
+mhttp[0m] [[34minfo[0m] http://vreeclimber.at
+[[92mpop3-capabilities-enum[0m] [[94mjavascript[0m] [[34minfo[0m] vreeclimber.at:110 [[96m"+OK Dovecot (Debian) ready."[0m]
+[[92mmysql-info[0m] [[94mjavascript[0m] [[34minfo[0m] vreeclimber.at:3306 [[96m"Version: 8.0.36-28"[0m,[96m"Transport: tcp"[0m]
+[[92mimap-detect[0m] [[94mtcp[0m] [[34minfo[0m] vreeclimber.at:143
+[[92mmysql-detect[0m] [[94mtcp[0m] [[34minfo[0m] vreeclimber.at:3306
+[[92mmysql-native-password[0m] [[94mtcp[0m] [[34minfo[0m] vreeclimber.at:3306
+[[92mssl-issuer[0m] [[94mssl[0m] [[34minfo[0m] vreeclimber.at:443 [[96m"Starfield Technologies, Inc."[0m]
+[[92mssl-dns-names[0m] [[94mssl[0m] [[34minfo[0m] vreeclimber.at:443 [[96m"www.vreeclimber.at"[0m,[96m"vreeclimber.at"[0m]

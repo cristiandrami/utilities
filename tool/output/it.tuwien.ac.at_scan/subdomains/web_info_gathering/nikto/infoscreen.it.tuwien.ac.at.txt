@@ -1,0 +1,7 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: infoscreen.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Server leaks inodes via ETags, header found with file /, fields: 0x2a32 0x5eda58eb527be 
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ OPTIONS /: Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
++ -3233: GET /icons/README: /icons/README: Apache default file found.

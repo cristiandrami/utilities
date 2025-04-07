@@ -1,0 +1,9 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: insight.tuwien.ac.at
++ Target Port: 443
++ GET /: Retrieved x-powered-by header: ASP.NET
++ GET /: Retrieved x-aspnet-version header: 4.0.30319
++ GET /: IP address found in the 'location' header. The IP is "5.5.0.0".
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /: Uncommon header 'x-aspnetmvc-version' found, with contents: 5.2
++ GET /: Cookie OpenIdConnect.nonce.GCEy0wo1ekU6Y56Z6zCXMOsFg9eB1RVom6UR0ER3Ulc%3D created without the httponly flag

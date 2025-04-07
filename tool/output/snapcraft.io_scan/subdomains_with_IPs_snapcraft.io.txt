@@ -1,0 +1,2 @@
+DOMAIN                                                                                              IP ADDRESS
+snapcraft.io                                                                                        185.125.190.29

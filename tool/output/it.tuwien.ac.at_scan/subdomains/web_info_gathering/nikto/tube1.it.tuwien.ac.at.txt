@@ -1,0 +1,33 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: tube1.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Server leaks inodes via ETags, header found with file /, fields: 0xW/2fdf 0xRI+gow4dU/V3tO47MBnTywEVDTw 
++ GET /: Uncommon header 'access-control-allow-origin' found, with contents: *
++ GET /: Uncommon header 'tk' found, with contents: N
++ GET /: Uncommon header 'x-frame-options' found, with contents: DENY
++ GET /robots.txt: "robots.txt" retrieved but it does not contain any 'disallow' entries (which is odd).
++ OPTIONS /: Uncommon header 'access-control-allow-methods' found, with contents: GET,HEAD,PUT,PATCH,POST,DELETE
++ GET /oc/Search/sqlqhit.asp: Cookie clientLanguage created without the secure flag
++ GET /oc/Search/sqlqhit.asp: Cookie clientLanguage created without the httponly flag
++ -48: GET /doc: /doc: The /doc directory is browsable. This may be /usr/doc.
++ -3092: GET /css: /css: This might be interesting...
++ -3092: GET /new: /new: This may be interesting...
++ -3092: GET /pages/: /pages/: This might be interesting...
++ -3233: GET /perl/samples/volscgi.pl: /perl/samples/volscgi.pl: Novell Netware 5.1 contains Novonyx default files which reveal system information. All default files should be removed.
++ -3092: GET /ar/: /ar/: This might be interesting... potential country code (Argentina)
++ -3092: GET /ca/: /ca/: This might be interesting... potential country code (Canada)
++ -3092: GET /sv/: /sv/: This might be interesting... potential country code (El Salvador)
++ -3092: GET /fi/: /fi/: This might be interesting... potential country code (Finland)
++ -3092: GET /fr/: /fr/: This might be interesting... potential country code (France)
++ -3092: GET /de/: /de/: This might be interesting... potential country code (Germany)
++ -3092: GET /gl/: /gl/: This might be interesting... potential country code (Greenland)
++ -3092: GET /gd/: /gd/: This might be interesting... potential country code (Grenada)
++ -3092: GET /hu/: /hu/: This might be interesting... potential country code (Hungary)
++ -3092: GET /it/: /it/: This might be interesting... potential country code (Italy)
++ -3092: GET /nl/: /nl/: This might be interesting... potential country code (Netherlands)
++ -3092: GET /pl/: /pl/: This might be interesting... potential country code (Poland)
++ -3092: GET /pt/: /pt/: This might be interesting... potential country code (Portugal)
++ -3092: GET /ru/: /ru/: This might be interesting... potential country code (Russian Federation)
++ -3092: GET /es/: /es/: This might be interesting... potential country code (Spain)
++ -3092: GET /th/: /th/: This might be interesting... potential country code (Thailand)
++ -3092: GET /vi/: /vi/: This might be interesting... potential country code (U.S. Virgin Islands)

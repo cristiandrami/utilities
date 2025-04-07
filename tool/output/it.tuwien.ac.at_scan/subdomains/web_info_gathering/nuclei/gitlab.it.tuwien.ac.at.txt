@@ -1,0 +1,8 @@
+[ssl-issuer] [ssl] [info] gitlab.it.tuwien.ac.at:443 ["Unspecified"]
+[expired-ssl] [ssl] [low] gitlab.it.tuwien.ac.at:443 ["2024-03-17 08:18:49 +0000 UTC"]
+[mismatched-ssl-certificate] [ssl] [low] gitlab.it.tuwien.ac.at:443 ["CN: allianz-ptvap02.vm.at.nxlr.eu"]
+[revoked-ssl-certificate] [ssl] [low] gitlab.it.tuwien.ac.at:443
+[ssl-dns-names] [ssl] [info] gitlab.it.tuwien.ac.at:443 ["allianz-ptvap02.vm.at.nxlr.eu"]
+[untrusted-root-certificate] [ssl] [low] gitlab.it.tuwien.ac.at:443
+] [[94mssl[0m] [[34minfo[0m] gitlab.it.tuwien.ac.at:443 [[96m"allianz-ptvap02.vm.at.nxlr.eu"[0m]
+[[92muntrusted-root-certificate[0m] [[94mssl[0m] [[32mlow[0m] gitlab.it.tuwien.ac.at:443

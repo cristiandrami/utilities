@@ -1,0 +1,14 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: survey.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Retrieved x-powered-by header: PHP/8.1.28
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 1; mode=block
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=63072000; includeSubdomains;
++ GET /: Cookie PHPSESSID created without the httponly flag
++ GET /tmp/assets/1a8999a1/favicon.ico: Server leaks inodes via ETags, header found with file /tmp/assets/1a8999a1/favicon.ico, fields: 0x3aee 0x61400e62d97c9 
++ DEBUG HASH(0x61aa7b9dd288): DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ -9392: GET /userinfo.php?uid=1;: /userinfo.php?uid=1;: Xoops portal gives detailed error messages including SQL syntax and may allow an exploit.
++ -3268: GET /icons/: /icons/: Directory indexing found.
++ -3233: GET /icons/README: /icons/README: Apache default file found.

@@ -1,0 +1,90 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-06-02 14:22 CEST
+Nmap scan report for wp558.webpack.hosteurope.de (5.175.14.80)
+Host is up (0.016s latency).
+Not shown: 986 closed ports
+PORT     STATE    SERVICE         VERSION
+21/tcp   open     ftp             ProFTPD (requires SSL)
+22/tcp   open     ssh?
+25/tcp   open     smtp?
+53/tcp   filtered domain
+80/tcp   open     http            Apache httpd
+110/tcp  open     pop3            Dovecot pop3d
+143/tcp  open     imap            Dovecot imapd
+443/tcp  open     ssl/http        Apache httpd
+465/tcp  open     ssl/smtp
+587/tcp  open     smtp            Exim smtpd
+993/tcp  open     ssl/imap        Dovecot imapd
+995/tcp  open     ssl/pop3        Dovecot pop3d
+3306/tcp open     mysql?
+7000/tcp filtered afs3-fileserver
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port25-TCP:V=7.80%I=7%D=6/2%Time=665C6415%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,20,"554\x20SMTP\x20synchronization\x20error\r\n")%r(HTTPOptions,2
+SF:0,"554\x20SMTP\x20synchronization\x20error\r\n")%r(RPCCheck,20,"554\x20
+SF:SMTP\x20synchronization\x20error\r\n")%r(SSLSessionReq,20,"554\x20SMTP\
+SF:x20synchronization\x20error\r\n")%r(TerminalServerCookie,20,"554\x20SMT
+SF:P\x20synchronization\x20error\r\n")%r(TLSSessionReq,20,"554\x20SMTP\x20
+SF:synchronization\x20error\r\n")%r(FourOhFourRequest,20,"554\x20SMTP\x20s
+SF:ynchronization\x20error\r\n")%r(SIPOptions,20,"554\x20SMTP\x20synchroni
+SF:zation\x20error\r\n")%r(LANDesk-RC,20,"554\x20SMTP\x20synchronization\x
+SF:20error\r\n")%r(TerminalServer,20,"554\x20SMTP\x20synchronization\x20er
+SF:ror\r\n")%r(JavaRMI,20,"554\x20SMTP\x20synchronization\x20error\r\n")%r
+SF:(oracle-tns,20,"554\x20SMTP\x20synchronization\x20error\r\n")%r(ms-sql-
+SF:s,20,"554\x20SMTP\x20synchronization\x20error\r\n")%r(afp,20,"554\x20SM
+SF:TP\x20synchronization\x20error\r\n")%r(giop,20,"554\x20SMTP\x20synchron
+SF:ization\x20error\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port465-TCP:V=7.80%T=SSL%I=7%D=6/2%Time=665C6407%P=x86_64-pc-linux-gnu%
+SF:r(NULL,60,"220\x20wp558\.webpack\.hosteurope\.de\x20ESMTP\x20Host\x20Eu
+SF:rope\x20Mail\x20Service\x20Sun,\x2002\x20Jun\x202024\x2014:22:25\x20\+0
+SF:200\r\n")%r(Hello,109,"220\x20wp558\.webpack\.hosteurope\.de\x20ESMTP\x
+SF:20Host\x20Europe\x20Mail\x20Service\x20Sun,\x2002\x20Jun\x202024\x2014:
+SF:22:25\x20\+0200\r\n250-wp558\.webpack\.hosteurope\.de\x20Hello\x20host-
+SF:118-117\.panorama\.sth\.ac\.at\x20\[78\.104\.118\.117\]\r\n250-SIZE\x20
+SF:52428800\r\n250-8BITMIME\r\n250-PIPELINING\r\n250-AUTH\x20PLAIN\x20LOGI
+SF:N\r\n250\x20HELP\r\n")%r(Help,B5,"220\x20wp558\.webpack\.hosteurope\.de
+SF:\x20ESMTP\x20Host\x20Europe\x20Mail\x20Service\x20Sun,\x2002\x20Jun\x20
+SF:2024\x2014:22:39\x20\+0200\r\n214-Commands\x20supported:\r\n214\x20AUTH
+SF:\x20HELO\x20EHLO\x20MAIL\x20RCPT\x20DATA\x20BDAT\x20NOOP\x20QUIT\x20RSE
+SF:T\x20HELP\r\n")%r(GenericLines,94,"220\x20wp558\.webpack\.hosteurope\.d
+SF:e\x20ESMTP\x20Host\x20Europe\x20Mail\x20Service\x20Sun,\x2002\x20Jun\x2
+SF:02024\x2014:22:47\x20\+0200\r\n500\x20unrecognized\x20command\r\n500\x2
+SF:0unrecognized\x20command\r\n")%r(GetRequest,94,"220\x20wp558\.webpack\.
+SF:hosteurope\.de\x20ESMTP\x20Host\x20Europe\x20Mail\x20Service\x20Sun,\x2
+SF:002\x20Jun\x202024\x2014:22:52\x20\+0200\r\n500\x20unrecognized\x20comm
+SF:and\r\n500\x20unrecognized\x20command\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3306-TCP:V=7.80%I=7%D=6/2%Time=665C6401%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,51,"M\0\0\0\n8\.0\.36-28\0\xd6\xfd\x1c\0K\x16\nX\x05Z\x0c\\\0\xff\xff
+SF:\xff\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\0\0\0\x0ep\x7f<\*\x1c1xhn'z\0mysql
+SF:_native_password\0")%r(GenericLines,76,"M\0\0\0\n8\.0\.36-28\0\xd6\xfd\
+SF:x1c\0K\x16\nX\x05Z\x0c\\\0\xff\xff\xff\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\
+SF:0\0\0\x0ep\x7f<\*\x1c1xhn'z\0mysql_native_password\0!\0\0\x01\xff\x84\x
+SF:04#08S01Got\x20packets\x20out\x20of\x20order")%r(GetRequest,76,"M\0\0\0
+SF:\n8\.0\.36-28\0\xe2\xfd\x1c\0HR\x02K\"#!\)\0\xff\xff\xff\x02\0\xff\xdf\
+SF:x15\0\0\0\0\0\0\0\0\0\0:9yyuy\x0f\x13\x14WY\r\0mysql_native_password\0!
+SF:\0\0\x01\xff\x84\x04#08S01Got\x20packets\x20out\x20of\x20order")%r(HTTP
+SF:Options,76,"M\0\0\0\n8\.0\.36-28\0\xe3\xfd\x1c\0VN\x11\ruc_\x0b\0\xff\x
+SF:ff\xff\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\0\0\0=8k}\x0b\x1d&pM\){R\0mysql_
+SF:native_password\0!\0\0\x01\xff\x84\x04#08S01Got\x20packets\x20out\x20of
+SF:\x20order")%r(RTSPRequest,76,"M\0\0\0\n8\.0\.36-28\0\xe4\xfd\x1c\0\x08#
+SF:&8-\\O\x0f\0\xff\xff\xff\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\0\0\0\x150\x06
+SF:lO90_N\x18&;\0mysql_native_password\0!\0\0\x01\xff\x84\x04#08S01Got\x20
+SF:packets\x20out\x20of\x20order")%r(RPCCheck,76,"M\0\0\0\n8\.0\.36-28\0\x
+SF:e5\xfd\x1c\0:\(=\\\x13#&\x14\0\xff\xff\xff\x02\0\xff\xdf\x15\0\0\0\0\0\
+SF:0\0\0\0\0\x01j\x01\x1bu>\]4\x03Q\x01P\0mysql_native_password\0!\0\0\x01
+SF:\xff\x84\x04#08S01Got\x20packets\x20out\x20of\x20order")%r(DNSVersionBi
+SF:ndReqTCP,76,"M\0\0\0\n8\.0\.36-28\0\xe6\xfd\x1c\0XL5F;G~e\0\xff\xff\xff
+SF:\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\0\0\0\ng9\x08G;fxfKp&\0mysql_native_pa
+SF:ssword\0!\0\0\x01\xff\x84\x04#08S01Got\x20packets\x20out\x20of\x20order
+SF:")%r(DNSStatusRequestTCP,76,"M\0\0\0\n8\.0\.36-28\0\xe7\xfd\x1c\0\x19`Z
+SF:TJ\x20\x04y\0\xff\xff\xff\x02\0\xff\xdf\x15\0\0\0\0\0\0\0\0\0\0W\x0b\\\
+SF:x01Ce\x16\x12q\x0e\x1a\x0c\0mysql_native_password\0!\0\0\x01\xff\x84\x0
+SF:4#08S01Got\x20packets\x20out\x20of\x20order")%r(Help,76,"M\0\0\0\n8\.0\
+SF:.36-28\0\xe8\xfd\x1c\0\x12'eaB\[F0\0\xff\xff\xff\x02\0\xff\xdf\x15\0\0\
+SF:0\0\0\0\0\0\0\0/\r5\x06\.\t\x7fs9A\r1\0mysql_native_password\0!\0\0\x01
+SF:\xff\x84\x04#08S01Got\x20packets\x20out\x20of\x20order");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 92.80 seconds

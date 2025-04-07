@@ -1,0 +1,21 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: tudocsdev.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Uncommon header 'x-permitted-cross-domain-policies' found, with contents: none
++ GET /: Uncommon header 'x-robots-tag' found, with contents: none
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=16000000; includeSubDomains; preload;
++ GET /: Uncommon header 'content-security-policy' found, with contents: default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; frame-src *; img-src * data: blob:; font-src 'self' data:; media-src *; connect-src *
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 0
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /: Uncommon header 'x-download-options' found, with contents: noopen
++ GET /: Uncommon header 'referrer-policy' found, with contents: no-referrer-when-downgrade
++ GET /: Cookie tu_oc created without the httponly flag
++ GET /: Cookie oc_sessionPassphrase created without the httponly flag
++ GET /robots.txt: Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x1a 0x6124c919c0680 
++ GET //: File/dir '/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET /robots.txt: "robots.txt" contains 1 entry which should be manually viewed.
++ GET /: Hostname 'tudocsdev.it.tuwien.ac.at' does not match certificate's CN 'oc-lb-1.it.tuwien.ac.at'
++ -877: TRACE /: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ -3268: GET /icons/: /icons/: Directory indexing found.
++ -3233: GET /icons/README: /icons/README: Apache default file found.

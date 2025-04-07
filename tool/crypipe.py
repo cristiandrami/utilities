@@ -17,8 +17,7 @@ from src.NucleiScanner import NucleiScanner
 from src.NmapScanner import NmapScanner
 from src.JoomScanner import JoomScanner
 from src.NiktoScanner import NiktoScanner
-
-
+from src.FuffScanner import FuffScanner
 
 
 
@@ -192,14 +191,19 @@ def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (
         
         status.stop()
 
+        print(domain)
+        print(domains)
+    
+
         dirb_scanner = DirbScanner(original_domain=domain, console=console, domains=domains)
         nuclei_scanner = NucleiScanner(original_domain=domain, domains=domains, console=console)
         nmap_scanner = NmapScanner(original_domain=domain, original_ip=original_ip, unique_ips=unique_ip_addresses, console=console)
         joom_scanner = JoomScanner(original_domain=domain, domains=domains, console=console)
         nikto_scanner = NiktoScanner(original_domain=domain, domains=domains, console=console)
+        ffuf_scanner = FuffScanner(original_domain=domain, domains=domains, console=console)
 
 
-        status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap, Dirb] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
+        status = console.status(f"[{spinner_style}][Step 2 - Nuclei, Joomscan, Nmap, Dirb, ffuf] I'm executing my activities in parallel... You will be noticed when the activities are done. Let me cook bro 🍝🍝", spinner_style=spinner_style)
         with status:
         
             nmap_thread = threading.Thread(target=nmap_scanner.scan_with_nmap_IPs, args=())
@@ -207,18 +211,22 @@ def main(domain: str = typer.Option('', "--domain", "-d", help="Domain to scan (
             dirb_thread = threading.Thread(target=dirb_scanner.scan_with_dirb, args=())
             nikto_thread = threading.Thread(target=nikto_scanner.scan_with_nikto, args=())
             nuclei_thread = threading.Thread(target=nuclei_scanner.scan_with_nuclei, args=())
+            ffuf_thread = threading.Thread(target=ffuf_scanner.scan_with_ffuf, args=())
 
-            nmap_thread.start()
-            joomla_thread.start()
-            nuclei_thread.start()
-            dirb_thread.start()
-            nikto_thread.start()
 
-            nmap_thread.join()
-            joomla_thread.join()
-            nuclei_thread.join()
-            dirb_thread.join()
-            nikto_thread.join()
+            #nmap_thread.start()
+            #joomla_thread.start()
+            #nuclei_thread.start()
+            #dirb_thread.start()
+            #nikto_thread.start()
+            ffuf_thread.start()
+
+            #nmap_thread.join()
+            #joomla_thread.join()
+            #nuclei_thread.join()
+            #dirb_thread.join()
+            #nikto_thread.join()
+            ffuf_thread.join()
             
 
         

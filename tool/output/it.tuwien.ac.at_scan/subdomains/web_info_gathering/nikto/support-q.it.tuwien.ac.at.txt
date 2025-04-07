@@ -1,0 +1,10 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: support-q.it.tuwien.ac.at
++ Target Port: 443
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /z9ymQoz6.koi8-r: Uncommon header 'x-xss-protection' found, with contents: 1; mode=block
++ GET /z9ymQoz6.koi8-r: Uncommon header 'content-security-policy' found, with contents: default-src 'self'; frame-src 'self' ; script-src 'self' 'unsafe-eval' 'unsafe-inline'; connect-src 'self' https://dojotoolkit.org ; object-src 'self'; img-src * data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'
++ GET /z9ymQoz6.koi8-r: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /z9ymQoz6.koi8-r: Uncommon header 'permissions-policy' found, with contents: accelerometer=(),camera=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),payment=(),usb=(),screen-wake-lock=(),ambient-light-sensor=(),autoplay=()
++ GET /z9ymQoz6.koi8-r: Uncommon header 'referrer-policy' found, with contents: strict-origin
++ GET /: Server is using a wildcard certificate: '*.support-q.it.tuwien.ac.at'

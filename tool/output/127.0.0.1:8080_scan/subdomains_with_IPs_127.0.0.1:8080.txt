@@ -1,0 +1,2 @@
+DOMAIN                                                                                              IP ADDRESS
+127.0.0.1:8080                                                                                      No IP, maybe it is down or unreachable

@@ -1,0 +1,6 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: test-damap.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Server leaks inodes via ETags, header found with file /, fields: 0x66058577 0x7502 
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /: Hostname 'test-damap.it.tuwien.ac.at' does not match certificate's CN 'damap.it.tuwien.ac.at'

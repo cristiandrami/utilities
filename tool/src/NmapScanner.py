@@ -24,11 +24,12 @@ class NmapScanner:
             output_path = os.path.join(output_directory, output_file)
 
             if not os.path.exists(output_path):
-                command = ["nmap", ip.strip(), '-sV', '-T4', '-Pn']
+                command = ["nmap", ip.strip(), '-sV', '-sT', '-T4', '-Pn']
                 try:
                     with open(output_path, "w") as output_file:
                         self.console.print(f'[INFO] Starting nmap scan on {ip}\n', style='info')
                         subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=False)
+                        
                     self.console.print(f"[SUCCESS] nmap scan completed for {ip.strip()}. Results saved in {output_path}", style='success')
                 except subprocess.CalledProcessError as e:
                     self.console.print(f"[ERROR] nmap error while scanning {ip.strip()}: {e}", style='error')

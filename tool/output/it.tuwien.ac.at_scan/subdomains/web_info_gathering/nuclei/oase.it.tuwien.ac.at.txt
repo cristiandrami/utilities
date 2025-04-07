@@ -1,0 +1,3 @@
+[ssl-issuer] [ssl] [info] oase.it.tuwien.ac.at:443 ["GEANT Vereniging"]
+[ssl-dns-names] [ssl] [info] oase.it.tuwien.ac.at:443 ["oase.it.tuwien.ac.at","oase.zid.tuwien.ac.at","oase1.zid.tuwien.ac.at","oase2.zid.tuwien.ac.at","oase3.zid.tuwien.ac.at","oase4.it.tuwien.ac.at","iu.zid.tuwien.ac.at"]
+ase2.zid.tuwien.ac.at"[0m,[96m"oase3.zid.tuwien.ac.at"[0m,[96m"oase4.it.tuwien.ac.at"[0m,[96m"iu.zid.tuwien.ac.at"[0m]

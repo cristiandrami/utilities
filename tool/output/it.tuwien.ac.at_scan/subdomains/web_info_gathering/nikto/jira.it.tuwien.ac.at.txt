@@ -1,0 +1,31 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: jira.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Uncommon header 'content-security-policy' found, with contents: frame-src 'self' https://tuwien.planetestream.com https://portal.tuwien.tv https://colab.tuwien.ac.at https://wiki.tuwien.ac.at https://player.vimeo.com https://calendly.com;
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=31536000
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 1; mode=block
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /: Uncommon header 'referrer-policy' found, with contents: strict-origin-when-cross-origin
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /: Uncommon header 'x-arequestid' found, with contents: 761x212097x1
++ GET /: Cookie atlassian.xsrf.token created without the secure flag
++ GET /: Cookie atlassian.xsrf.token created without the httponly flag
++ GET /XOxfi055.*: Uncommon header 'x-ausername' found, with contents: anonymous
++ GET /XOxfi055.*: Cookie JSESSIONID created without the secure flag
++ GET /XOxfi055.*: Cookie JSESSIONID created without the httponly flag
++ GET /robots.txt: Server leaks inodes via ETags, header found with file /robots.txt, fields: 0xW/733 0x1712835314000 
++ GET //secure/ConfigureReport.jspa: File/dir '/secure/ConfigureReport.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET //secure/ConfigureReport!default.jspa: File/dir '/secure/ConfigureReport!default.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET //secure/AboutPage.jspa: File/dir '/secure/AboutPage.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET //secure/JiraCreditsPage!default.jspa: File/dir '/secure/JiraCreditsPage!default.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET //secure/credits/AroundTheWorld!default.jspa: File/dir '/secure/credits/AroundTheWorld!default.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET //secure/ViewKeyboardShortcuts!default.jspa: File/dir '/secure/ViewKeyboardShortcuts!default.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET //secure/ViewProfile.jspa: File/dir '/secure/ViewProfile.jspa' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET /robots.txt: "robots.txt" contains 12 entries which should be manually viewed.
++ GET /server-info: Uncommon header 'is-data-center' found, with contents: true
++ GET /server-info: Uncommon header 'mobile-plugin-enabled' found, with contents: true
++ GET /server-info: Uncommon header 'instance-name' found, with contents: TU Jira
++ GET /server-info: Uncommon header 'new-create-metadata-api' found, with contents: true
++ GET /server-info: Uncommon header 'jira-base-url' found, with contents: https://jira.it.tuwien.ac.at
++ GET /server-info: Uncommon header 'push-notification-enabled' found, with contents: true
++ -562: GET /server-info: /server-info: This gives a lot of Apache information. Comment out appropriate line in httpd.conf or restrict access to allowed hosts.

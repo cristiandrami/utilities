@@ -1,0 +1,15 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: webstats-dev.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Uncommon header 'x-ua-compatible' found, with contents: IE=edge
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 1;mode=block
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=63072000;
++ GET /: Cookie TYPO3MODE created without the secure flag
++ GET /: Cookie TYPO3MODE created without the httponly flag
++ GET /: Hostname 'webstats-dev.it.tuwien.ac.at' does not match certificate's CN 'institute.tuwien.ac.at'
++ -877: TRACE /: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ -3268: GET /icons/: /icons/: Directory indexing found.
++ GET /icons/README: Server leaks inodes via ETags, header found with file /icons/README, fields: 0x13f4 0x438c034968a80 
++ -3233: GET /icons/README: /icons/README: Apache default file found.

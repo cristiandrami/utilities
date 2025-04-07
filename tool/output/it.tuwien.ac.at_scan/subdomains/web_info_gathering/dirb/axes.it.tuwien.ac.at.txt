@@ -1,0 +1,25 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: /home/cristian/Scrivania/utilities/tool/output/it.tuwien.ac.at_scan/subdomains/web_info_gathering/dirb/axes.it.tuwien.ac.at.txt
+START_TIME: Wed May 22 11:13:55 2024
+URL_BASE: https://axes.it.tuwien.ac.at/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Fine tunning of NOT_FOUND detection
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://axes.it.tuwien.ac.at/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: OPERATION TIMEOUT)
+
+-----------------
+END_TIME: Wed May 22 11:15:11 2024
+DOWNLOADED: 0 - FOUND: 0

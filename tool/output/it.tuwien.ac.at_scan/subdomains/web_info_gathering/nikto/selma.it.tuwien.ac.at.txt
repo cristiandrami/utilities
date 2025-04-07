@@ -1,0 +1,23 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: selma.it.tuwien.ac.at
++ Target Port: 443
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ GET /LlSs2fuz.pwd: Server leaks inodes via ETags, header found with file /LlSs2fuz.pwd, fields: 0x2ec 0x43b6d3c2e8b80 
++ GET /robots.txt: "robots.txt" contains 1 entry which should be manually viewed.
++ DEBUG HASH(0x5ce3cd1641a0): DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ GET /phpMyAdmin/: Uncommon header 'x-ob_mode' found, with contents: 1
++ GET /phpMyAdmin/: Uncommon header 'x-permitted-cross-domain-policies' found, with contents: none
++ GET /phpMyAdmin/: Uncommon header 'x-content-type-options' found, with contents: nosniff
++ GET /phpMyAdmin/: Uncommon header 'content-security-policy' found, with contents: default-src 'self' ;script-src 'self' 'unsafe-inline' 'unsafe-eval' ;style-src 'self' 'unsafe-inline' ;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ GET /phpMyAdmin/: Uncommon header 'x-frame-options' found, with contents: DENY
++ GET /phpMyAdmin/: Uncommon header 'x-webkit-csp' found, with contents: default-src 'self' ;script-src 'self'  'unsafe-inline' 'unsafe-eval';referrer no-referrer;style-src 'self' 'unsafe-inline' ;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ GET /phpMyAdmin/: Uncommon header 'x-robots-tag' found, with contents: noindex, nofollow
++ GET /phpMyAdmin/: Uncommon header 'x-content-security-policy' found, with contents: default-src 'self' ;options inline-script eval-script;referrer no-referrer;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ GET /phpMyAdmin/: Uncommon header 'referrer-policy' found, with contents: no-referrer
++ GET /phpMyAdmin/: Uncommon header 'x-xss-protection' found, with contents: 1; mode=block
++ GET /phpMyAdmin/: Cookie phpMyAdmin_https created without the httponly flag
++ GET /phpMyAdmin/: Cookie pma_lang_https created without the httponly flag
++ -3092: GET /phpMyAdmin/: /phpMyAdmin/: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ -3092: GET /manual/: /manual/: Web server manual found.
++ -3268: GET /manual/images/: /manual/images/: Directory indexing found.
++ GET /phpMyAdmin/: /phpMyAdmin/: phpMyAdmin directory found

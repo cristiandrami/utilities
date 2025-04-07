@@ -27,15 +27,14 @@ class DirbScanner:
             if not os.path.exists(output_path):
                 try:
                     os.makedirs(output_directory, exist_ok=True)
-                    command = ['dirb', url, '-r', '-f', '-o', output_path]
+                    command = ['dirb', url, '-r', '-f']
 
                     self.console.print(f'[INFO] Starting dirb scan on {domain}\n', style='info')
                     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-                    errors = process.stderr.read()
-                    if errors:
-                        self.console.print(f"error executing dirb {url} -r: {errors}", style="error")
-                    else:
-                        self.console.print(f"[SUCCESS] dirb scan completed for {url}. Results saved in {output_path}", style="success")
+                    with open(output_path, "w") as f: 
+                        for line in process.stdout:
+                            f.write(line)
+                    self.console.print(f"[SUCCESS] dirb scan completed for {url}. Results saved in {output_path}", style="success")
                 except Exception as e:
                     self.console.print(f"error on executing dirb {url} -r: {e}", style="error")
             else:
